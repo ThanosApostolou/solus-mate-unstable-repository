@@ -4,7 +4,7 @@ Repository for solus with the latest development mate packages. For build procce
 # Enable repository
 Run:
 ```
-sudo eopkg ar --at 0 SolusMateUnstableRepository http://raw.github.com/ThanosApostolou/solus-mate-unstable-repository/master/eopkg-index.xml.xz
+sudo eopkg ar --at 0 SolusMateUnstableRepository http://raw.github.com/ThanosApostolou/solus-mate-unstable-repository/stable/eopkg-index.xml.xz
 ```
 (apparently **http://** is needed in order to work)
 
