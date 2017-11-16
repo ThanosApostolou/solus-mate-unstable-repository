@@ -1,5 +1,1254 @@
 <PISI>
     <Package>
+        <Name>mate-screensaver-devel</Name>
+        <Summary xml:lang="en">Development files for mate-screensaver</Summary>
+        <Description xml:lang="en">MATE Screensaver and Locker</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>GPL-2.0</License>
+        <License>LGPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency release="7">mate-screensaver</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <PkgConfig>mate-screensaver</PkgConfig>
+        </Provides>
+        <History>
+            <Update release="7">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>395</InstalledSize>
+        <PackageSize>1384</PackageSize>
+        <PackageHash>6f68207234522ed378d11171f7aaf1e2faf4b182</PackageHash>
+        <PackageURI>mate-screensaver-devel-1.19.0-7-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-screensaver</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-panel-docs</Name>
+        <Summary xml:lang="en">Documentation for mate-panel</Summary>
+        <Description xml:lang="en">The panel of the MATE Desktop Environment</Description>
+        <PartOf>programming.docs</PartOf>
+        <License>GPL-2.0</License>
+        <License>LGPL-2.0</License>
+        <License>GFDL-1.1</License>
+        <History>
+            <Update release="11">
+                <Date>2017-11-16</Date>
+                <Version>1.19.3</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>82682</InstalledSize>
+        <PackageSize>15403</PackageSize>
+        <PackageHash>23c1c64ac092cdca49848b7d14848a2c441cbae7</PackageHash>
+        <PackageURI>mate-panel-docs-1.19.3-11-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-panel</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-settings-daemon</Name>
+        <Summary xml:lang="en">MATE Settings Daemon</Summary>
+        <Description xml:lang="en">Settings Daemon for the MATE Desktop</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <License>LGPL-2.1</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="7">libxklavier</Dependency>
+            <Dependency releaseFrom="9">mate-desktop</Dependency>
+            <Dependency releaseFrom="17">polkit</Dependency>
+            <Dependency releaseFrom="10">libnspr</Dependency>
+            <Dependency releaseFrom="5">libstartup-notification</Dependency>
+            <Dependency releaseFrom="5">libnotify</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="15">dconf</Dependency>
+            <Dependency releaseFrom="11">dbus-glib</Dependency>
+            <Dependency releaseFrom="20">libnss</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="17">freetype2</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="10">libxi</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="15">libx11</Dependency>
+            <Dependency releaseFrom="6">libmatemixer</Dependency>
+            <Dependency releaseFrom="23">fontconfig</Dependency>
+            <Dependency releaseFrom="5">libice</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="9">libcanberra</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="8">libxext</Dependency>
+            <Dependency releaseFrom="6">libsm</Dependency>
+            <Dependency releaseFrom="22">dbus</Dependency>
+            <Dependency releaseFrom="7">libmatekbd</Dependency>
+            <Dependency>xmodmap</Dependency>
+            <Dependency>xrdb</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="14">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>3571587</InstalledSize>
+        <PackageSize>618320</PackageSize>
+        <PackageHash>fe6f32f66ea345e83a4c5da30d6e42f7be7554f9</PackageHash>
+        <PackageURI>mate-settings-daemon-1.19.0-14-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-settings-daemon</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>caja-docs</Name>
+        <Summary xml:lang="en">Documentation for caja</Summary>
+        <Description xml:lang="en">File manager of the MATE Desktop</Description>
+        <PartOf>programming.docs</PartOf>
+        <License>GPL-2.0</License>
+        <License>LGPL-2.0</License>
+        <History>
+            <Update release="13">
+                <Date>2017-11-16</Date>
+                <Version>1.19.2</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>214079</InstalledSize>
+        <PackageSize>23255</PackageSize>
+        <PackageHash>f996ff394eccb4eb0f89b7b14cce17b8c8deee08</PackageHash>
+        <PackageURI>caja-docs-1.19.2-13-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>caja</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-utils</Name>
+        <Summary xml:lang="en">Utilities for the MATE Desktop</Summary>
+        <Description xml:lang="en">Utilities for the MATE Desktop such as a screenshot tool</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <License>GFDL-1.1</License>
+        <License>LGPL-2.1</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="16">zlib</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="9">libcanberra</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="15">libx11</Dependency>
+            <Dependency releaseFrom="5">libice</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="8">libxext</Dependency>
+            <Dependency releaseFrom="11">libgtop</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="11">mate-panel</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="6">libsm</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="8">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>13791601</InstalledSize>
+        <PackageSize>6334658</PackageSize>
+        <PackageHash>aafb838a52ec63312039cbcc6c8ce8165db2c1c1</PackageHash>
+        <PackageURI>mate-utils-1.19.0-8-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-utils</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-media</Name>
+        <Summary xml:lang="en">MATE Volume Control Applet</Summary>
+        <Description xml:lang="en">MATE Volume Control Applet</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <License>GFDL-1.1</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="6">libmatemixer</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="18">libxml2</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="15">libx11</Dependency>
+            <Dependency releaseFrom="9">mate-desktop</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="9">libcanberra</Dependency>
+            <Dependency releaseFrom="5">libstartup-notification</Dependency>
+            <Dependency>sound-theme-freedesktop</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="10">
+                <Date>2017-11-16</Date>
+                <Version>1.19.1</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>1316573</InstalledSize>
+        <PackageSize>229732</PackageSize>
+        <PackageHash>0445821dab8d72246d28d978736535b620e6abe4</PackageHash>
+        <PackageURI>mate-media-1.19.1-10-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-media</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-desktop-docs</Name>
+        <Summary xml:lang="en">Documentation for mate-desktop</Summary>
+        <Description xml:lang="en">mate-desktop contains the libmate-desktop library, the mate-about program as well as some desktop-wide documents.</Description>
+        <PartOf>programming.docs</PartOf>
+        <License>GPL-2.0</License>
+        <License>LGPL-2.0</License>
+        <License>GFDL-1.1</License>
+        <History>
+            <Update release="9">
+                <Date>2017-11-16</Date>
+                <Version>1.19.1</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>286120</InstalledSize>
+        <PackageSize>27600</PackageSize>
+        <PackageHash>1f8bf3389120b5531d52c9946a1189b5c0408933</PackageHash>
+        <PackageURI>mate-desktop-docs-1.19.1-9-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-desktop</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>atril-docs</Name>
+        <Summary xml:lang="en">Documentation for atril</Summary>
+        <Description xml:lang="en">Atril is a document viewer capable of displaying multiple and single page document formats like PDF and Postscript</Description>
+        <PartOf>programming.docs</PartOf>
+        <License>GPL-2.0</License>
+        <History>
+            <Update release="9">
+                <Date>2017-11-16</Date>
+                <Version>1.19.4</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>1347780</InstalledSize>
+        <PackageSize>99020</PackageSize>
+        <PackageHash>94a42ccef2d4a300c73dc8a188adf385f3deab96</PackageHash>
+        <PackageURI>atril-docs-1.19.4-9-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>atril</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>marco</Name>
+        <Summary xml:lang="en">Window manager of the MATE Desktop</Summary>
+        <Description xml:lang="en">Window manager of the MATE Desktop</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="6">libxcomposite</Dependency>
+            <Dependency releaseFrom="8">libxcursor</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="8">libxfixes</Dependency>
+            <Dependency releaseFrom="5">libstartup-notification</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="9">libcanberra</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="15">libx11</Dependency>
+            <Dependency releaseFrom="5">libice</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="10">libxrender</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="8">libxdamage</Dependency>
+            <Dependency releaseFrom="8">libxext</Dependency>
+            <Dependency releaseFrom="6">libsm</Dependency>
+            <Dependency releaseFrom="8">libxrandr</Dependency>
+            <Dependency releaseFrom="8">libxinerama</Dependency>
+            <Dependency>mate-desktop</Dependency>
+            <Dependency>zenity</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="8">
+                <Date>2017-11-16</Date>
+                <Version>1.19.1</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>5618244</InstalledSize>
+        <PackageSize>988510</PackageSize>
+        <PackageHash>d04f934e40b10ae5128d6664a387c5dc042a292d</PackageHash>
+        <PackageURI>marco-1.19.1-8-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>marco</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>marco-devel</Name>
+        <Summary xml:lang="en">Development files for marco</Summary>
+        <Description xml:lang="en">Window manager of the MATE Desktop</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="66">libgtk-3-devel</Dependency>
+            <Dependency release="8">marco</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <PkgConfig>libmarco-private</PkgConfig>
+        </Provides>
+        <History>
+            <Update release="8">
+                <Date>2017-11-16</Date>
+                <Version>1.19.1</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>77177</InstalledSize>
+        <PackageSize>17149</PackageSize>
+        <PackageHash>996f0d32c2438b3c77c3a76d2bf69c774e328794</PackageHash>
+        <PackageURI>marco-devel-1.19.1-8-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>marco</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>atril-devel</Name>
+        <Summary xml:lang="en">Development files for atril</Summary>
+        <Description xml:lang="en">Atril is a document viewer capable of displaying multiple and single page document formats like PDF and Postscript</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="66">libgtk-3-devel</Dependency>
+            <Dependency releaseFrom="39">glib2-devel</Dependency>
+            <Dependency release="9">atril</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <PkgConfig>atril-view-1.5.0</PkgConfig>
+            <PkgConfig>atril-document-1.5.0</PkgConfig>
+        </Provides>
+        <History>
+            <Update release="9">
+                <Date>2017-11-16</Date>
+                <Version>1.19.4</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>177830</InstalledSize>
+        <PackageSize>26231</PackageSize>
+        <PackageHash>41d00a890b3fd08944a44c21098d4b17c91f886a</PackageHash>
+        <PackageURI>atril-devel-1.19.4-9-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>atril</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-menus</Name>
+        <Summary xml:lang="en">Provides the MATE implementation of XDG Menus</Summary>
+        <Description xml:lang="en">The libmate-menu library implements the &quot;Desktop Menu Specification&quot; from freedesktop.org</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <License>LGPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="17">python</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="8">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>631880</InstalledSize>
+        <PackageSize>131617</PackageSize>
+        <PackageHash>0d01ec33068072761f94316f61625eda8d54c1b8</PackageHash>
+        <PackageURI>mate-menus-1.19.0-8-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-menus</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>caja-extensions</Name>
+        <Summary xml:lang="en">Set of extensions for Caja, the MATE file manager.</Summary>
+        <Description xml:lang="en">Set of extensions for Caja, the MATE file manager.</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="9">mate-desktop</Dependency>
+            <Dependency releaseFrom="2">gupnp</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="13">caja</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="22">dbus</Dependency>
+            <Dependency releaseFrom="11">dbus-glib</Dependency>
+            <Dependency releaseFrom="5">libstartup-notification</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="5">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>889053</InstalledSize>
+        <PackageSize>168500</PackageSize>
+        <PackageHash>c9648f864b7722ec13691a69ab72a80e5b7621bf</PackageHash>
+        <PackageURI>caja-extensions-1.19.0-5-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>caja-extensions</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>caja-extensions-devel</Name>
+        <Summary xml:lang="en">Development files for caja-extensions</Summary>
+        <Description xml:lang="en">Set of extensions for Caja, the MATE file manager.</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="66">libgtk-3-devel</Dependency>
+            <Dependency release="5">caja-extensions</Dependency>
+            <Dependency releaseFrom="39">glib2-devel</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <PkgConfig>caja-sendto</PkgConfig>
+        </Provides>
+        <History>
+            <Update release="5">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>4359</InstalledSize>
+        <PackageSize>3136</PackageSize>
+        <PackageHash>551296ce926d684c4b39e380de8d77a6767132ac</PackageHash>
+        <PackageURI>caja-extensions-devel-1.19.0-5-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>caja-extensions</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-panel-devel</Name>
+        <Summary xml:lang="en">Development files for mate-panel</Summary>
+        <Description xml:lang="en">The panel of the MATE Desktop Environment</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>GPL-2.0</License>
+        <License>LGPL-2.0</License>
+        <License>GFDL-1.1</License>
+        <RuntimeDependencies>
+            <Dependency release="11">mate-panel</Dependency>
+            <Dependency releaseFrom="66">libgtk-3-devel</Dependency>
+            <Dependency releaseFrom="39">glib2-devel</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <PkgConfig>libmatepanelapplet-4.0</PkgConfig>
+        </Provides>
+        <History>
+            <Update release="11">
+                <Date>2017-11-16</Date>
+                <Version>1.19.3</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>9544</InstalledSize>
+        <PackageSize>4289</PackageSize>
+        <PackageHash>2ea1ff71185af883dc0fa0a1ad22d9046c645527</PackageHash>
+        <PackageURI>mate-panel-devel-1.19.3-11-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-panel</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>engrampa</Name>
+        <Summary xml:lang="en">Archive manager for the MATE Desktop</Summary>
+        <Description xml:lang="en">Archive manager for the MATE Desktop</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="13">caja</Dependency>
+            <Dependency releaseFrom="11">file</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="7">
+                <Date>2017-11-16</Date>
+                <Version>1.19.1</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>6013143</InstalledSize>
+        <PackageSize>1200809</PackageSize>
+        <PackageHash>939d1332c7c5c40933adf16c2ffc9d7bd2c2b32d</PackageHash>
+        <PackageURI>engrampa-1.19.1-7-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>engrampa</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-sensors-applet-devel</Name>
+        <Summary xml:lang="en">Development files for mate-sensors-applet</Summary>
+        <Description xml:lang="en">MATE Sensors Applet is an applet for the MATE Panel to display
+readings from hardware sensors, including CPU temperature, fan speeds
+and voltage readings under Linux.</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency release="7">mate-sensors-applet</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="7">
+                <Date>2017-11-16</Date>
+                <Version>1.19.1</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>9816</InstalledSize>
+        <PackageSize>4096</PackageSize>
+        <PackageHash>642b7aba6cfafef47499ff2a570bb2c6f40407d2</PackageHash>
+        <PackageURI>mate-sensors-applet-devel-1.19.1-7-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-sensors-applet</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>brisk-menu</Name>
+        <Summary xml:lang="en">An efficient menu for the MATE Desktop</Summary>
+        <Description xml:lang="en">An efficient menu for the MATE Desktop, from the Solus developers.</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <License>CC-BY-SA-4.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="8">mate-menus</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="15">libx11</Dependency>
+            <Dependency releaseFrom="32">libgcc</Dependency>
+            <Dependency releaseFrom="5">libnotify</Dependency>
+            <Dependency releaseFrom="11">mate-panel</Dependency>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="11">
+                <Date>2017-11-16</Date>
+                <Version>0.5.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>185484</InstalledSize>
+        <PackageSize>52704</PackageSize>
+        <PackageHash>5cb18b904b36a36f298a7e1ed3fce96ef2a80ec9</PackageHash>
+        <PackageURI>brisk-menu-0.5.0-11-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>brisk-menu</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-user-guide</Name>
+        <Summary xml:lang="en">This package contains documents which will be packaged together and shipped as mate-user-guide in the core MATE distribution.</Summary>
+        <Description xml:lang="en">This package contains documents which will be packaged together and shipped as mate-user-guide in the core MATE distribution.  They should be documents targeted for end-users of MATE and have general MATE applicability.</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GFDL-1.1</License>
+        <RuntimeDependencies>
+            <Dependency>yelp</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="0">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>22604780</InstalledSize>
+        <PackageSize>8233676</PackageSize>
+        <PackageHash>70f3910517154b80c9153904316df2aedb95d96b</PackageHash>
+        <PackageURI>mate-user-guide-1.19.0-0-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-user-guide</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libmateweather-devel</Name>
+        <Summary xml:lang="en">Development files for libmateweather</Summary>
+        <Description xml:lang="en">libmateweather is a library to access weather information from online services for numerous locations.</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>GPL-2.1</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="66">libgtk-3-devel</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf-devel</Dependency>
+            <Dependency release="9">libmateweather</Dependency>
+            <Dependency releaseFrom="39">glib2-devel</Dependency>
+            <Dependency releaseFrom="18">libxml2-devel</Dependency>
+            <Dependency releaseFrom="16">libsoup-devel</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <PkgConfig>mateweather</PkgConfig>
+        </Provides>
+        <History>
+            <Update release="9">
+                <Date>2017-11-16</Date>
+                <Version>1.19.1</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>24359</InstalledSize>
+        <PackageSize>6442</PackageSize>
+        <PackageHash>1db78c4a7bc80b9a6206cd5c71b4c36dfd8b735c</PackageHash>
+        <PackageURI>libmateweather-devel-1.19.1-9-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libmateweather</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libmatemixer</Name>
+        <Summary xml:lang="en">libmatemixer is a mixer library for MATE desktop.</Summary>
+        <Description xml:lang="en">libmatemixer is a mixer library for MATE desktop.</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>LGPL-2.1</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="17">alsa-lib</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="25">pulseaudio</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="6">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>644734</InstalledSize>
+        <PackageSize>136004</PackageSize>
+        <PackageHash>44f78bce2e6a93738043d24b9e4a482f3c439c84</PackageHash>
+        <PackageURI>libmatemixer-1.19.0-6-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libmatemixer</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libmateweather-docs</Name>
+        <Summary xml:lang="en">Documentation for libmateweather</Summary>
+        <Description xml:lang="en">libmateweather is a library to access weather information from online services for numerous locations.</Description>
+        <PartOf>programming.docs</PartOf>
+        <License>GPL-2.1</License>
+        <History>
+            <Update release="9">
+                <Date>2017-11-16</Date>
+                <Version>1.19.1</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>256892</InstalledSize>
+        <PackageSize>24251</PackageSize>
+        <PackageHash>7c0e4e41ca851b98340b8200c01d358fa292ef92</PackageHash>
+        <PackageURI>libmateweather-docs-1.19.1-9-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libmateweather</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>pluma</Name>
+        <Summary xml:lang="en">Text Editor for the MATE Desktop</Summary>
+        <Description xml:lang="en">Text Editor for the MATE Desktop</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="16">gobject-introspection</Dependency>
+            <Dependency releaseFrom="15">libgtksourceview</Dependency>
+            <Dependency releaseFrom="6">libsm</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="18">libxml2</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="15">libx11</Dependency>
+            <Dependency releaseFrom="13">libpeas</Dependency>
+            <Dependency releaseFrom="5">libice</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="11">enchant</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="7">
+                <Date>2017-11-16</Date>
+                <Version>1.19.2</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>14889023</InstalledSize>
+        <PackageSize>3416281</PackageSize>
+        <PackageHash>69752fd7e0bec66bf13f6b64b04f1894d15f400a</PackageHash>
+        <PackageURI>pluma-1.19.2-7-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>pluma</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-power-manager</Name>
+        <Summary xml:lang="en">Power Managment for the MATE Desktop</Summary>
+        <Description xml:lang="en">Power Management for the MATE Desktop</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="15">libx11</Dependency>
+            <Dependency releaseFrom="5">libnotify</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="11">dbus-glib</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="22">dbus</Dependency>
+            <Dependency releaseFrom="9">libgnome-keyring</Dependency>
+            <Dependency releaseFrom="8">libxrandr</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="9">upower</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="11">mate-panel</Dependency>
+            <Dependency releaseFrom="8">libxext</Dependency>
+            <Dependency releaseFrom="9">libcanberra</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="9">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>7852407</InstalledSize>
+        <PackageSize>3001899</PackageSize>
+        <PackageHash>9c29a34f920569423e66709d977b4d0a13b00827</PackageHash>
+        <PackageURI>mate-power-manager-1.19.0-9-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-power-manager</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>caja</Name>
+        <Summary xml:lang="en">File manager of the MATE Desktop</Summary>
+        <Description xml:lang="en">File manager of the MATE Desktop</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <License>LGPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="18">libxml2</Dependency>
+            <Dependency releaseFrom="5">libnotify</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="5">libstartup-notification</Dependency>
+            <Dependency releaseFrom="3">libexif</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="15">libx11</Dependency>
+            <Dependency releaseFrom="9">mate-desktop</Dependency>
+            <Dependency releaseFrom="5">libice</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="5">libexempi</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="6">libsm</Dependency>
+            <Dependency>gvfs</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="13">
+                <Date>2017-11-16</Date>
+                <Version>1.19.2</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>17589928</InstalledSize>
+        <PackageSize>3701931</PackageSize>
+        <PackageHash>271781cbe0bb814b8cb07a15d018167b21d54f83</PackageHash>
+        <PackageURI>caja-1.19.2-13-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>caja</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-polkit</Name>
+        <Summary xml:lang="en">MATE PolicyKit Agent</Summary>
+        <Description xml:lang="en">MATE PolicyKit Agent</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>LGPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="5">libdbusmenu</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="17">polkit</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="4">libappindicator</Dependency>
+            <Dependency>accountsservice</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="8">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>531556</InstalledSize>
+        <PackageSize>85786</PackageSize>
+        <PackageHash>909f9fe866007829916bcddc2b3c25cf34b01f66</PackageHash>
+        <PackageURI>mate-polkit-1.19.0-8-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-polkit</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-control-center-devel</Name>
+        <Summary xml:lang="en">Development files for mate-control-center</Summary>
+        <Description xml:lang="en">MATE Control Center</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency release="14">mate-control-center</Dependency>
+            <Dependency releaseFrom="8">mate-menus-devel</Dependency>
+            <Dependency releaseFrom="14">librsvg-devel</Dependency>
+            <Dependency releaseFrom="66">libgtk-3-devel</Dependency>
+            <Dependency releaseFrom="9">mate-desktop-devel</Dependency>
+            <Dependency releaseFrom="39">glib2-devel</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <PkgConfig>mate-slab</PkgConfig>
+            <PkgConfig>mate-window-settings-2.0</PkgConfig>
+            <PkgConfig>mate-default-applications</PkgConfig>
+            <PkgConfig>mate-keybindings</PkgConfig>
+        </Provides>
+        <History>
+            <Update release="14">
+                <Date>2017-11-16</Date>
+                <Version>1.19.1</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>302525</InstalledSize>
+        <PackageSize>61680</PackageSize>
+        <PackageHash>02e841d60d6e164628889e4ebee26721737572f8</PackageHash>
+        <PackageURI>mate-control-center-devel-1.19.1-14-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-control-center</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>caja-extensions-docs</Name>
+        <Summary xml:lang="en">Documentation for caja-extensions</Summary>
+        <Description xml:lang="en">Set of extensions for Caja, the MATE file manager.</Description>
+        <PartOf>programming.docs</PartOf>
+        <License>GPL-2.0</License>
+        <History>
+            <Update release="5">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>37131</InstalledSize>
+        <PackageSize>9967</PackageSize>
+        <PackageHash>0d6f1148373b8ec4cb4433b55ca81fb8beeb7df1</PackageHash>
+        <PackageURI>caja-extensions-docs-1.19.0-5-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>caja-extensions</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-backgrounds</Name>
+        <Summary xml:lang="en">Background images for the MATE desktop</Summary>
+        <Description xml:lang="en">Background images and data for MATE. The MATE backgrounds are a fork of GNOME backgrounds.</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <History>
+            <Update release="4">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>21261297</InstalledSize>
+        <PackageSize>20835994</PackageSize>
+        <PackageHash>de24a4b7cd1311e3026e01592a36e910e04e42f8</PackageHash>
+        <PackageURI>mate-backgrounds-1.19.0-4-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-backgrounds</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-icon-theme</Name>
+        <Summary xml:lang="en">MATE Desktop Icon Theme</Summary>
+        <Description xml:lang="en">The standard icon theme for the MATE Desktop</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>CC-BY-SA-3.0</License>
+        <History>
+            <Update release="5">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>25823078</InstalledSize>
+        <PackageSize>13151275</PackageSize>
+        <PackageHash>3798d5317215e2cbb5c7699517861752271c0d91</PackageHash>
+        <PackageURI>mate-icon-theme-1.19.0-5-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-icon-theme</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
         <Name>mate-common</Name>
         <Summary xml:lang="en">Tools to build MATE from git</Summary>
         <Description xml:lang="en">Tools to build MATE from git</Description>
@@ -32,13 +1281,642 @@
         </Source>
     </Package>
     <Package>
-        <Name>mate-desktop-docs</Name>
-        <Summary xml:lang="en">Documentation for mate-desktop</Summary>
-        <Description xml:lang="en">mate-desktop contains the libmate-desktop library, the mate-about program as well as some desktop-wide documents.</Description>
-        <PartOf>programming.docs</PartOf>
+        <Name>mate-menus-devel</Name>
+        <Summary xml:lang="en">Development files for mate-menus</Summary>
+        <Description xml:lang="en">The libmate-menu library implements the &quot;Desktop Menu Specification&quot; from freedesktop.org</Description>
+        <PartOf>programming.devel</PartOf>
         <License>GPL-2.0</License>
         <License>LGPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="39">glib2-devel</Dependency>
+            <Dependency release="8">mate-menus</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <PkgConfig>libmate-menu</PkgConfig>
+        </Provides>
+        <History>
+            <Update release="8">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>6075</InstalledSize>
+        <PackageSize>3022</PackageSize>
+        <PackageHash>982744f9763810a56362baaa1d52d1cd85b2887a</PackageHash>
+        <PackageURI>mate-menus-devel-1.19.0-8-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-menus</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-polkit-devel</Name>
+        <Summary xml:lang="en">Development files for mate-polkit</Summary>
+        <Description xml:lang="en">MATE PolicyKit Agent</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>LGPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency release="8">mate-polkit</Dependency>
+            <Dependency releaseFrom="17">polkit-devel</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <PkgConfig>polkit-gtk-mate-1</PkgConfig>
+        </Provides>
+        <History>
+            <Update release="8">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>6902</InstalledSize>
+        <PackageSize>3076</PackageSize>
+        <PackageHash>483b9c4ed71a23e844bcdd911b34d34d97ba175b</PackageHash>
+        <PackageURI>mate-polkit-devel-1.19.0-8-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-polkit</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libmatemixer-devel</Name>
+        <Summary xml:lang="en">Development files for libmatemixer</Summary>
+        <Description xml:lang="en">libmatemixer is a mixer library for MATE desktop.</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>LGPL-2.1</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="39">glib2-devel</Dependency>
+            <Dependency release="6">libmatemixer</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <PkgConfig>libmatemixer</PkgConfig>
+        </Provides>
+        <History>
+            <Update release="6">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>66144</InstalledSize>
+        <PackageSize>9435</PackageSize>
+        <PackageHash>e728aa060ee3a9dd02bccc32e006a0c3d7c34341</PackageHash>
+        <PackageURI>libmatemixer-devel-1.19.0-6-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libmatemixer</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-screensaver</Name>
+        <Summary xml:lang="en">MATE Screensaver and Locker</Summary>
+        <Description xml:lang="en">MATE Screensaver and Locker</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <License>LGPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="70">mesalib</Dependency>
+            <Dependency releaseFrom="5">libnotify</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="6">libxscrnsaver</Dependency>
+            <Dependency releaseFrom="11">dbus-glib</Dependency>
+            <Dependency releaseFrom="5">libstartup-notification</Dependency>
+            <Dependency releaseFrom="59">systemd</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="8">mate-menus</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="22">dbus</Dependency>
+            <Dependency releaseFrom="15">libx11</Dependency>
+            <Dependency releaseFrom="9">mate-desktop</Dependency>
+            <Dependency releaseFrom="12">pam</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="8">libxext</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="8">libxxf86vm</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="7">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>6167078</InstalledSize>
+        <PackageSize>4698810</PackageSize>
+        <PackageHash>21c912f3965fcaedea03225c2671a3b0dc63223c</PackageHash>
+        <PackageURI>mate-screensaver-1.19.0-7-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-screensaver</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>pluma-devel</Name>
+        <Summary xml:lang="en">Development files for pluma</Summary>
+        <Description xml:lang="en">Text Editor for the MATE Desktop</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="13">libpeas-devel</Dependency>
+            <Dependency releaseFrom="15">libgtksourceview-devel</Dependency>
+            <Dependency release="7">pluma</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <PkgConfig>pluma</PkgConfig>
+        </Provides>
+        <History>
+            <Update release="7">
+                <Date>2017-11-16</Date>
+                <Version>1.19.2</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>92132</InstalledSize>
+        <PackageSize>17048</PackageSize>
+        <PackageHash>cfe2441b271786e5ddbf86bec2bb9df61c129303</PackageHash>
+        <PackageURI>pluma-devel-1.19.2-7-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>pluma</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-calc</Name>
+        <Summary xml:lang="en">Calculator tool for the MATE desktop</Summary>
+        <Description xml:lang="en">This is `mate-calc`, a fork of `gnome-calc`, the calculator application
+that was previously in the OpenWindows Deskset of the Solaris 8
+operating system.
+
+It incorporates a multiple precision arithmetic packages based on the
+work of Professor Richard Brent, who has also kindly given me
+permission to make it available.</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="18">libxml2</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="3">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>3895001</InstalledSize>
+        <PackageSize>615471</PackageSize>
+        <PackageHash>f0a47176f8c4c342ea7510e92f2b72508dfb37ed</PackageHash>
+        <PackageURI>mate-calc-1.19.0-3-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-calc</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>atril</Name>
+        <Summary xml:lang="en">MATE Desktop Document Viewer</Summary>
+        <Description xml:lang="en">Atril is a document viewer capable of displaying multiple and single page document formats like PDF and Postscript</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="38">libwebkit-gtk</Dependency>
+            <Dependency releaseFrom="15">libx11</Dependency>
+            <Dependency releaseFrom="4">libgxps</Dependency>
+            <Dependency releaseFrom="18">libxml2</Dependency>
+            <Dependency releaseFrom="19">libtiff</Dependency>
+            <Dependency releaseFrom="32">libstdc++</Dependency>
+            <Dependency releaseFrom="32">libgcc</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="2">djvulibre</Dependency>
+            <Dependency releaseFrom="18">libarchive</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="16">zlib</Dependency>
+            <Dependency releaseFrom="16">poppler</Dependency>
+            <Dependency releaseFrom="5">libice</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="13">caja</Dependency>
+            <Dependency releaseFrom="11">libsecret</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="16">libsoup</Dependency>
+            <Dependency releaseFrom="6">libsm</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="9">
+                <Date>2017-11-16</Date>
+                <Version>1.19.4</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>5139310</InstalledSize>
+        <PackageSize>1231258</PackageSize>
+        <PackageHash>e6117038aff90841ca5eb7b4fbed428f0fe8d1a6</PackageHash>
+        <PackageURI>atril-1.19.4-9-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>atril</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>pluma-docs</Name>
+        <Summary xml:lang="en">Documentation for pluma</Summary>
+        <Description xml:lang="en">Text Editor for the MATE Desktop</Description>
+        <PartOf>programming.docs</PartOf>
+        <License>GPL-2.0</License>
+        <History>
+            <Update release="7">
+                <Date>2017-11-16</Date>
+                <Version>1.19.2</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>673107</InstalledSize>
+        <PackageSize>51001</PackageSize>
+        <PackageHash>21f5c12b2f7704441c09741ff11f66434dafac8e</PackageHash>
+        <PackageURI>pluma-docs-1.19.2-7-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>pluma</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libmatekbd</Name>
+        <Summary xml:lang="en">libmatekbd is a fork of libgnomekbd</Summary>
+        <Description xml:lang="en">libmatekbd is a fork of libgnomekbd</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>LGPL-2.1</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="7">libxklavier</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="15">libx11</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="7">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>606943</InstalledSize>
+        <PackageSize>121340</PackageSize>
+        <PackageHash>00e07affd1d148927c885e11c50908ceb9f180e3</PackageHash>
+        <PackageURI>libmatekbd-1.19.0-7-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libmatekbd</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-notification-daemon</Name>
+        <Summary xml:lang="en">XDG Notifications Daemon for MATE Desktop</Summary>
+        <Description xml:lang="en">XDG Notifications Daemon for MATE Desktop</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="22">dbus</Dependency>
+            <Dependency releaseFrom="15">libx11</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="5">libnotify</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="9">libcanberra</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="11">dbus-glib</Dependency>
+            <Dependency releaseFrom="11">libwnck</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="6">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>567493</InstalledSize>
+        <PackageSize>112907</PackageSize>
+        <PackageHash>0bf73b4c38c81a33b8919f71c269e8ff5ee04e82</PackageHash>
+        <PackageURI>mate-notification-daemon-1.19.0-6-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-notification-daemon</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>caja-devel</Name>
+        <Summary xml:lang="en">Development files for caja</Summary>
+        <Description xml:lang="en">File manager of the MATE Desktop</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>GPL-2.0</License>
+        <License>LGPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="66">libgtk-3-devel</Dependency>
+            <Dependency release="13">caja</Dependency>
+            <Dependency releaseFrom="39">glib2-devel</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <PkgConfig>libcaja-extension</PkgConfig>
+        </Provides>
+        <History>
+            <Update release="13">
+                <Date>2017-11-16</Date>
+                <Version>1.19.2</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>39218</InstalledSize>
+        <PackageSize>7772</PackageSize>
+        <PackageHash>4660bd7f4d52dcd4069a7e840231818834c9621b</PackageHash>
+        <PackageURI>caja-devel-1.19.2-13-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>caja</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-utils-docs</Name>
+        <Summary xml:lang="en">Documentation for mate-utils</Summary>
+        <Description xml:lang="en">Utilities for the MATE Desktop such as a screenshot tool</Description>
+        <PartOf>programming.docs</PartOf>
+        <License>GPL-2.0</License>
         <License>GFDL-1.1</License>
+        <License>LGPL-2.1</License>
+        <History>
+            <Update release="8">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>486427</InstalledSize>
+        <PackageSize>40553</PackageSize>
+        <PackageHash>1bb1151a1895e6b1c6bf0e0ccbd997cc3027b26b</PackageHash>
+        <PackageURI>mate-utils-docs-1.19.0-8-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-utils</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-system-monitor</Name>
+        <Summary xml:lang="en">MATE System Monitor</Summary>
+        <Description xml:lang="en">MATE System Monitor</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="13">glibmm</Dependency>
+            <Dependency releaseFrom="18">libxml2</Dependency>
+            <Dependency releaseFrom="32">libstdc++</Dependency>
+            <Dependency releaseFrom="32">libgcc</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="9">atkmm</Dependency>
+            <Dependency releaseFrom="11">libwnck</Dependency>
+            <Dependency releaseFrom="59">systemd</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="10">libgtkmm-3</Dependency>
+            <Dependency releaseFrom="14">librsvg</Dependency>
+            <Dependency releaseFrom="10">cairomm</Dependency>
+            <Dependency releaseFrom="11">libgtop</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="8">libsigc++</Dependency>
+            <Dependency releaseFrom="9">pangomm</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="6">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>4632633</InstalledSize>
+        <PackageSize>1941926</PackageSize>
+        <PackageHash>0209e55362dd0e64ed1d487242fb9e78f6de7bea</PackageHash>
+        <PackageURI>mate-system-monitor-1.19.0-6-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-system-monitor</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-control-center</Name>
+        <Summary xml:lang="en">MATE Control Center</Summary>
+        <Description xml:lang="en">MATE Control Center</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="7">libxklavier</Dependency>
+            <Dependency releaseFrom="8">marco</Dependency>
+            <Dependency releaseFrom="18">libxml2</Dependency>
+            <Dependency releaseFrom="8">libxcursor</Dependency>
+            <Dependency releaseFrom="6">libxscrnsaver</Dependency>
+            <Dependency releaseFrom="7">libmatekbd</Dependency>
+            <Dependency releaseFrom="5">libdbusmenu</Dependency>
+            <Dependency releaseFrom="4">libappindicator</Dependency>
+            <Dependency releaseFrom="15">dconf</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="11">dbus-glib</Dependency>
+            <Dependency releaseFrom="5">libstartup-notification</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="17">freetype2</Dependency>
+            <Dependency releaseFrom="8">mate-menus</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="10">libxi</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="15">libx11</Dependency>
+            <Dependency releaseFrom="9">mate-desktop</Dependency>
+            <Dependency releaseFrom="14">librsvg</Dependency>
+            <Dependency releaseFrom="23">fontconfig</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="8">libxext</Dependency>
+            <Dependency releaseFrom="9">libcanberra</Dependency>
+            <Dependency releaseFrom="22">dbus</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="14">
+                <Date>2017-11-16</Date>
+                <Version>1.19.1</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>7650653</InstalledSize>
+        <PackageSize>1302747</PackageSize>
+        <PackageHash>990e32a570303b283e3133bfb527cacd01ec2693</PackageHash>
+        <PackageURI>mate-control-center-1.19.1-14-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-control-center</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>eom-docs</Name>
+        <Summary xml:lang="en">Documentation for eom</Summary>
+        <Description xml:lang="en">Eye Of MATE is the Image Viewer of the MATE Desktop</Description>
+        <PartOf>programming.docs</PartOf>
+        <License>GPL-2.0</License>
         <History>
             <Update release="9">
                 <Date>2017-11-16</Date>
@@ -52,10 +1930,228 @@
         <Distribution>Solus</Distribution>
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
-        <InstalledSize>286120</InstalledSize>
-        <PackageSize>27600</PackageSize>
-        <PackageHash>1f8bf3389120b5531d52c9946a1189b5c0408933</PackageHash>
-        <PackageURI>mate-desktop-docs-1.19.1-9-1-x86_64.eopkg</PackageURI>
+        <InstalledSize>738753</InstalledSize>
+        <PackageSize>59072</PackageSize>
+        <PackageHash>f8dca61ed99dad4ec1d5ced6fc5f4c76c1452808</PackageHash>
+        <PackageURI>eom-docs-1.19.1-9-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>eom</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>eom-devel</Name>
+        <Summary xml:lang="en">Development files for eom</Summary>
+        <Description xml:lang="en">Eye Of MATE is the Image Viewer of the MATE Desktop</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="66">libgtk-3-devel</Dependency>
+            <Dependency releaseFrom="39">glib2-devel</Dependency>
+            <Dependency release="9">eom</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <PkgConfig>eom</PkgConfig>
+        </Provides>
+        <History>
+            <Update release="9">
+                <Date>2017-11-16</Date>
+                <Version>1.19.1</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>68124</InstalledSize>
+        <PackageSize>12906</PackageSize>
+        <PackageHash>1510690cee5ae47108b343b9e4aad7d0298153a7</PackageHash>
+        <PackageURI>eom-devel-1.19.1-9-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>eom</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-utils-devel</Name>
+        <Summary xml:lang="en">Development files for mate-utils</Summary>
+        <Description xml:lang="en">Utilities for the MATE Desktop such as a screenshot tool</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>GPL-2.0</License>
+        <License>GFDL-1.1</License>
+        <License>LGPL-2.1</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="66">libgtk-3-devel</Dependency>
+            <Dependency release="8">mate-utils</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <PkgConfig>mate-dict</PkgConfig>
+        </Provides>
+        <History>
+            <Update release="8">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>48247</InstalledSize>
+        <PackageSize>8658</PackageSize>
+        <PackageHash>d2b21b6b70ad57bc7d50d6b2244201591e2964ee</PackageHash>
+        <PackageURI>mate-utils-devel-1.19.0-8-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-utils</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libmateweather</Name>
+        <Summary xml:lang="en">MATE weather access library</Summary>
+        <Description xml:lang="en">libmateweather is a library to access weather information from online services for numerous locations.</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.1</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="18">libxml2</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="16">libsoup</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="9">
+                <Date>2017-11-16</Date>
+                <Version>1.19.1</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>90911715</InstalledSize>
+        <PackageSize>5710626</PackageSize>
+        <PackageHash>6e6f9b78978521daa0c296ebec179fb70c2e0b3f</PackageHash>
+        <PackageURI>libmateweather-1.19.1-9-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libmateweather</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-session-manager</Name>
+        <Summary xml:lang="en">MATE Session Management</Summary>
+        <Description xml:lang="en">MATE Session Management</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="7">libxtst</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="11">dbus-glib</Dependency>
+            <Dependency releaseFrom="9">libxau</Dependency>
+            <Dependency releaseFrom="59">systemd</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="15">libx11</Dependency>
+            <Dependency releaseFrom="5">libice</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="10">libxrender</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="8">libxext</Dependency>
+            <Dependency releaseFrom="6">libsm</Dependency>
+            <Dependency releaseFrom="22">dbus</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="7">
+                <Date>2017-11-16</Date>
+                <Version>1.19.1</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>1404029</InstalledSize>
+        <PackageSize>310725</PackageSize>
+        <PackageHash>cda289edaa4411d31e92151d15c133c99d33a747</PackageHash>
+        <PackageURI>mate-session-manager-1.19.1-7-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-session-manager</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-desktop-devel</Name>
+        <Summary xml:lang="en">Development files for mate-desktop</Summary>
+        <Description xml:lang="en">mate-desktop contains the libmate-desktop library, the mate-about program as well as some desktop-wide documents.</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>GPL-2.0</License>
+        <License>LGPL-2.0</License>
+        <License>GFDL-1.1</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="66">libgtk-3-devel</Dependency>
+            <Dependency releaseFrom="5">libstartup-notification-devel</Dependency>
+            <Dependency releaseFrom="15">dconf-devel</Dependency>
+            <Dependency release="9">mate-desktop</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <PkgConfig>mate-desktop-2.0</PkgConfig>
+        </Provides>
+        <History>
+            <Update release="9">
+                <Date>2017-11-16</Date>
+                <Version>1.19.1</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>65934</InstalledSize>
+        <PackageSize>13221</PackageSize>
+        <PackageHash>67f9b4b1b7fe99ae5e084b0152d7c2bdf4021d76</PackageHash>
+        <PackageURI>mate-desktop-devel-1.19.1-9-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>mate-desktop</Name>
@@ -113,22 +2209,81 @@
         </Source>
     </Package>
     <Package>
-        <Name>mate-desktop-devel</Name>
-        <Summary xml:lang="en">Development files for mate-desktop</Summary>
-        <Description xml:lang="en">mate-desktop contains the libmate-desktop library, the mate-about program as well as some desktop-wide documents.</Description>
-        <PartOf>programming.devel</PartOf>
-        <License>GPL-2.0</License>
-        <License>LGPL-2.0</License>
-        <License>GFDL-1.1</License>
+        <Name>mate-terminal</Name>
+        <Summary xml:lang="en">Mate Desktop Terminal Emulator</Summary>
+        <Description xml:lang="en">Mate Desktop Terminal Emulator</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-3.0</License>
         <RuntimeDependencies>
-            <Dependency releaseFrom="66">libgtk-3-devel</Dependency>
-            <Dependency releaseFrom="5">libstartup-notification-devel</Dependency>
-            <Dependency releaseFrom="15">dconf-devel</Dependency>
-            <Dependency release="9">mate-desktop</Dependency>
+            <Dependency releaseFrom="5">pcre2</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="6">libsm</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="16">zlib</Dependency>
+            <Dependency releaseFrom="15">dconf</Dependency>
+            <Dependency releaseFrom="5">libice</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="23">libgnutls</Dependency>
+            <Dependency releaseFrom="21">libvte</Dependency>
+            <Dependency releaseFrom="15">libx11</Dependency>
         </RuntimeDependencies>
-        <Provides>
-            <PkgConfig>mate-desktop-2.0</PkgConfig>
-        </Provides>
+        <History>
+            <Update release="8">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>5854841</InstalledSize>
+        <PackageSize>1114385</PackageSize>
+        <PackageHash>ab004c5b1e19a3b65cbe9544884f3a18a78b1e60</PackageHash>
+        <PackageURI>mate-terminal-1.19.0-8-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-terminal</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>eom</Name>
+        <Summary xml:lang="en">Eye Of MATE - Image Viewer</Summary>
+        <Description xml:lang="en">Eye Of MATE is the Image Viewer of the MATE Desktop</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="16">zlib</Dependency>
+            <Dependency releaseFrom="18">libxml2</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="5">libstartup-notification</Dependency>
+            <Dependency releaseFrom="16">gobject-introspection</Dependency>
+            <Dependency releaseFrom="7">liblcms2</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="7">libjpeg-turbo</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="15">libx11</Dependency>
+            <Dependency releaseFrom="9">mate-desktop</Dependency>
+            <Dependency releaseFrom="14">librsvg</Dependency>
+            <Dependency releaseFrom="13">libpeas</Dependency>
+            <Dependency releaseFrom="3">libexif</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="5">libexempi</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+        </RuntimeDependencies>
         <History>
             <Update release="9">
                 <Date>2017-11-16</Date>
@@ -142,13 +2297,328 @@
         <Distribution>Solus</Distribution>
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
-        <InstalledSize>65934</InstalledSize>
-        <PackageSize>13221</PackageSize>
-        <PackageHash>67f9b4b1b7fe99ae5e084b0152d7c2bdf4021d76</PackageHash>
-        <PackageURI>mate-desktop-devel-1.19.1-9-1-x86_64.eopkg</PackageURI>
+        <InstalledSize>5779099</InstalledSize>
+        <PackageSize>1887910</PackageSize>
+        <PackageHash>9ff08b643421a4f5166c57527d44f94f55e3d8c2</PackageHash>
+        <PackageURI>eom-1.19.1-9-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
-            <Name>mate-desktop</Name>
+            <Name>eom</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-applets</Name>
+        <Summary xml:lang="en">Applets for the MATE Desktop</Summary>
+        <Description xml:lang="en">Applets for the MATE Desktop</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <License>GFDL-1.1</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="3">wireless-tools</Dependency>
+            <Dependency releaseFrom="11">libgtop</Dependency>
+            <Dependency releaseFrom="18">libxml2</Dependency>
+            <Dependency releaseFrom="17">polkit</Dependency>
+            <Dependency releaseFrom="5">libnotify</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="15">libgtksourceview</Dependency>
+            <Dependency releaseFrom="11">dbus-glib</Dependency>
+            <Dependency releaseFrom="11">libwnck</Dependency>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="9">libmateweather</Dependency>
+            <Dependency releaseFrom="11">mate-panel</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="15">libx11</Dependency>
+            <Dependency releaseFrom="5">libice</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="9">upower</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="28">linux-tools-cpupower</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="6">libsm</Dependency>
+            <Dependency releaseFrom="22">dbus</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="11">
+                <Date>2017-11-16</Date>
+                <Version>1.19.2</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>17329949</InstalledSize>
+        <PackageSize>7317347</PackageSize>
+        <PackageHash>3dc5bd781394a89aaef02f5d1b0c5ea771b1c4ae</PackageHash>
+        <PackageURI>mate-applets-1.19.2-11-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-applets</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-sensors-applet</Name>
+        <Summary xml:lang="en">Sensors applet for MATE Panel</Summary>
+        <Description xml:lang="en">MATE Sensors Applet is an applet for the MATE Panel to display
+readings from hardware sensors, including CPU temperature, fan speeds
+and voltage readings under Linux.</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="5">lm_sensors</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="2">libatasmart</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="5">libnotify</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="8">libxext</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="11">mate-panel</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="22">dbus</Dependency>
+            <Dependency releaseFrom="11">dbus-glib</Dependency>
+            <Dependency releaseFrom="15">libx11</Dependency>
+            <Dependency>udisks</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="7">
+                <Date>2017-11-16</Date>
+                <Version>1.19.1</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>737666</InstalledSize>
+        <PackageSize>158539</PackageSize>
+        <PackageHash>3fb933af8774c3b16132d50c78906e34878ce946</PackageHash>
+        <PackageURI>mate-sensors-applet-1.19.1-7-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-sensors-applet</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-panel</Name>
+        <Summary xml:lang="en">The panel of the MATE Desktop</Summary>
+        <Description xml:lang="en">The panel of the MATE Desktop Environment</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <License>LGPL-2.0</License>
+        <License>GFDL-1.1</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="9">libxau</Dependency>
+            <Dependency releaseFrom="5">libstartup-notification</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="15">dconf</Dependency>
+            <Dependency releaseFrom="11">dbus-glib</Dependency>
+            <Dependency releaseFrom="11">libwnck</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="8">mate-menus</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="9">libmateweather</Dependency>
+            <Dependency releaseFrom="22">dbus</Dependency>
+            <Dependency releaseFrom="15">libx11</Dependency>
+            <Dependency releaseFrom="9">mate-desktop</Dependency>
+            <Dependency releaseFrom="14">librsvg</Dependency>
+            <Dependency releaseFrom="5">libice</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="6">libsm</Dependency>
+            <Dependency releaseFrom="8">libxrandr</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="11">
+                <Date>2017-11-16</Date>
+                <Version>1.19.3</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>9657857</InstalledSize>
+        <PackageSize>1770980</PackageSize>
+        <PackageHash>7baca2896615ac96ebd32860f2966037a8f99f0d</PackageHash>
+        <PackageURI>mate-panel-1.19.3-11-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-panel</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-settings-daemon-devel</Name>
+        <Summary xml:lang="en">Development files for mate-settings-daemon</Summary>
+        <Description xml:lang="en">Settings Daemon for the MATE Desktop</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>GPL-2.0</License>
+        <License>LGPL-2.1</License>
+        <RuntimeDependencies>
+            <Dependency release="14">mate-settings-daemon</Dependency>
+            <Dependency releaseFrom="39">glib2-devel</Dependency>
+            <Dependency releaseFrom="22">dbus-devel</Dependency>
+            <Dependency releaseFrom="11">dbus-glib-devel</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <PkgConfig>mate-settings-daemon</PkgConfig>
+        </Provides>
+        <History>
+            <Update release="14">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>6534</InstalledSize>
+        <PackageSize>3253</PackageSize>
+        <PackageHash>4fe8145917d87fd8f3a2520843fc3641478e1fec</PackageHash>
+        <PackageURI>mate-settings-daemon-devel-1.19.0-14-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-settings-daemon</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libmatekbd-devel</Name>
+        <Summary xml:lang="en">Development files for libmatekbd</Summary>
+        <Description xml:lang="en">libmatekbd is a fork of libgnomekbd</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>LGPL-2.1</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="66">libgtk-3-devel</Dependency>
+            <Dependency releaseFrom="7">libxklavier-devel</Dependency>
+            <Dependency releaseFrom="39">glib2-devel</Dependency>
+            <Dependency release="7">libmatekbd</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <PkgConfig>libmatekbdui</PkgConfig>
+            <PkgConfig>libmatekbd</PkgConfig>
+        </Provides>
+        <History>
+            <Update release="7">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>22838</InstalledSize>
+        <PackageSize>6001</PackageSize>
+        <PackageHash>211cdad400c58042ca5edecd51dbe3ff9aef72f0</PackageHash>
+        <PackageURI>libmatekbd-devel-1.19.0-7-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libmatekbd</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libmatemixer-docs</Name>
+        <Summary xml:lang="en">Documentation for libmatemixer</Summary>
+        <Description xml:lang="en">libmatemixer is a mixer library for MATE desktop.</Description>
+        <PartOf>programming.docs</PartOf>
+        <License>LGPL-2.1</License>
+        <History>
+            <Update release="6">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>450694</InstalledSize>
+        <PackageSize>34350</PackageSize>
+        <PackageHash>17105b1c2a337ccc8ec362bcebe9587ef979d1d3</PackageHash>
+        <PackageURI>libmatemixer-docs-1.19.0-6-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libmatemixer</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-icon-theme-faenza</Name>
+        <Summary xml:lang="en">MATE Desktop Faenza Icon Theme</Summary>
+        <Description xml:lang="en">The faenza icon theme variant for the MATE Desktop</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>CC-BY-SA-3.0</License>
+        <History>
+            <Update release="1">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>79943754</InstalledSize>
+        <PackageSize>21732342</PackageSize>
+        <PackageHash>291d333ac59eb33d368042d645378c5eb77ab336</PackageHash>
+        <PackageURI>mate-icon-theme-faenza-1.19.0-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-icon-theme-faenza</Name>
             <Packager>
                 <Name>Thanos Apostolou</Name>
                 <Email>thanosapostolou@outlook.com</Email>
