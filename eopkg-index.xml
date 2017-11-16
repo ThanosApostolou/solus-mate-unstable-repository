@@ -39,6 +39,47 @@
         </Source>
     </Package>
     <Package>
+        <Name>mate-utils-devel</Name>
+        <Summary xml:lang="en">Development files for mate-utils</Summary>
+        <Description xml:lang="en">Utilities for the MATE Desktop such as a screenshot tool</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>GPL-2.0</License>
+        <License>GFDL-1.1</License>
+        <License>LGPL-2.1</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="66">libgtk-3-devel</Dependency>
+            <Dependency release="8">mate-utils</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <PkgConfig>mate-dict</PkgConfig>
+        </Provides>
+        <History>
+            <Update release="8">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>48247</InstalledSize>
+        <PackageSize>8658</PackageSize>
+        <PackageHash>d2b21b6b70ad57bc7d50d6b2244201591e2964ee</PackageHash>
+        <PackageURI>mate-utils-devel-1.19.0-8-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-utils</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
         <Name>mate-panel-docs</Name>
         <Summary xml:lang="en">Documentation for mate-panel</Summary>
         <Description xml:lang="en">The panel of the MATE Desktop Environment</Description>
@@ -336,62 +377,6 @@
         </Source>
     </Package>
     <Package>
-        <Name>marco</Name>
-        <Summary xml:lang="en">Window manager of the MATE Desktop</Summary>
-        <Description xml:lang="en">Window manager of the MATE Desktop</Description>
-        <PartOf>desktop.mate</PartOf>
-        <License>GPL-2.0</License>
-        <RuntimeDependencies>
-            <Dependency releaseFrom="6">libxcomposite</Dependency>
-            <Dependency releaseFrom="8">libxcursor</Dependency>
-            <Dependency releaseFrom="18">pango</Dependency>
-            <Dependency releaseFrom="66">libgtk-3</Dependency>
-            <Dependency releaseFrom="8">libxfixes</Dependency>
-            <Dependency releaseFrom="5">libstartup-notification</Dependency>
-            <Dependency releaseFrom="39">glib2</Dependency>
-            <Dependency releaseFrom="29">libcairo</Dependency>
-            <Dependency releaseFrom="9">libcanberra</Dependency>
-            <Dependency releaseFrom="47">glibc</Dependency>
-            <Dependency releaseFrom="15">libx11</Dependency>
-            <Dependency releaseFrom="5">libice</Dependency>
-            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
-            <Dependency releaseFrom="10">libxrender</Dependency>
-            <Dependency releaseFrom="18">libatk</Dependency>
-            <Dependency releaseFrom="8">libxdamage</Dependency>
-            <Dependency releaseFrom="8">libxext</Dependency>
-            <Dependency releaseFrom="6">libsm</Dependency>
-            <Dependency releaseFrom="8">libxrandr</Dependency>
-            <Dependency releaseFrom="8">libxinerama</Dependency>
-            <Dependency>mate-desktop</Dependency>
-            <Dependency>zenity</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="8">
-                <Date>2017-11-16</Date>
-                <Version>1.19.1</Version>
-                <Comment>Packaging update</Comment>
-                <Name>Thanos Apostolou</Name>
-                <Email>thanosapostolou@outlook.com</Email>
-            </Update>
-        </History>
-        <BuildHost>solus</BuildHost>
-        <Distribution>Solus</Distribution>
-        <DistributionRelease>1</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>5618244</InstalledSize>
-        <PackageSize>988510</PackageSize>
-        <PackageHash>d04f934e40b10ae5128d6664a387c5dc042a292d</PackageHash>
-        <PackageURI>marco-1.19.1-8-1-x86_64.eopkg</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>marco</Name>
-            <Packager>
-                <Name>Thanos Apostolou</Name>
-                <Email>thanosapostolou@outlook.com</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
         <Name>marco-devel</Name>
         <Summary xml:lang="en">Development files for marco</Summary>
         <Description xml:lang="en">Window manager of the MATE Desktop</Description>
@@ -399,13 +384,13 @@
         <License>GPL-2.0</License>
         <RuntimeDependencies>
             <Dependency releaseFrom="66">libgtk-3-devel</Dependency>
-            <Dependency release="8">marco</Dependency>
+            <Dependency release="9">marco</Dependency>
         </RuntimeDependencies>
         <Provides>
             <PkgConfig>libmarco-private</PkgConfig>
         </Provides>
         <History>
-            <Update release="8">
+            <Update release="9">
                 <Date>2017-11-16</Date>
                 <Version>1.19.1</Version>
                 <Comment>Packaging update</Comment>
@@ -419,8 +404,8 @@
         <Architecture>x86_64</Architecture>
         <InstalledSize>77177</InstalledSize>
         <PackageSize>17149</PackageSize>
-        <PackageHash>996f0d32c2438b3c77c3a76d2bf69c774e328794</PackageHash>
-        <PackageURI>marco-devel-1.19.1-8-1-x86_64.eopkg</PackageURI>
+        <PackageHash>9eff2f54b8aa9c75fd9335d78ea1f3f5b0f920b2</PackageHash>
+        <PackageURI>marco-devel-1.19.1-9-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>marco</Name>
@@ -1321,22 +1306,39 @@ and voltage readings under Linux.</Description>
         </Source>
     </Package>
     <Package>
-        <Name>mate-polkit-devel</Name>
-        <Summary xml:lang="en">Development files for mate-polkit</Summary>
-        <Description xml:lang="en">MATE PolicyKit Agent</Description>
-        <PartOf>programming.devel</PartOf>
-        <License>LGPL-2.0</License>
+        <Name>marco</Name>
+        <Summary xml:lang="en">Window manager of the MATE Desktop</Summary>
+        <Description xml:lang="en">Window manager of the MATE Desktop</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
         <RuntimeDependencies>
-            <Dependency release="8">mate-polkit</Dependency>
-            <Dependency releaseFrom="17">polkit-devel</Dependency>
+            <Dependency releaseFrom="6">libxcomposite</Dependency>
+            <Dependency releaseFrom="8">libxcursor</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="8">libxfixes</Dependency>
+            <Dependency releaseFrom="5">libstartup-notification</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="9">libcanberra</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="15">libx11</Dependency>
+            <Dependency releaseFrom="5">libice</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="10">libxrender</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="8">libxdamage</Dependency>
+            <Dependency releaseFrom="8">libxext</Dependency>
+            <Dependency releaseFrom="6">libsm</Dependency>
+            <Dependency releaseFrom="8">libxrandr</Dependency>
+            <Dependency releaseFrom="8">libxinerama</Dependency>
+            <Dependency>mate-desktop</Dependency>
+            <Dependency>zenity</Dependency>
         </RuntimeDependencies>
-        <Provides>
-            <PkgConfig>polkit-gtk-mate-1</PkgConfig>
-        </Provides>
         <History>
-            <Update release="8">
+            <Update release="9">
                 <Date>2017-11-16</Date>
-                <Version>1.19.0</Version>
+                <Version>1.19.1</Version>
                 <Comment>Packaging update</Comment>
                 <Name>Thanos Apostolou</Name>
                 <Email>thanosapostolou@outlook.com</Email>
@@ -1346,13 +1348,13 @@ and voltage readings under Linux.</Description>
         <Distribution>Solus</Distribution>
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
-        <InstalledSize>6902</InstalledSize>
-        <PackageSize>3076</PackageSize>
-        <PackageHash>483b9c4ed71a23e844bcdd911b34d34d97ba175b</PackageHash>
-        <PackageURI>mate-polkit-devel-1.19.0-8-1-x86_64.eopkg</PackageURI>
+        <InstalledSize>5618244</InstalledSize>
+        <PackageSize>988472</PackageSize>
+        <PackageHash>1dba73a13f71ffe059576b663e8056563a8fd72e</PackageHash>
+        <PackageURI>marco-1.19.1-9-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
-            <Name>mate-polkit</Name>
+            <Name>marco</Name>
             <Packager>
                 <Name>Thanos Apostolou</Name>
                 <Email>thanosapostolou@outlook.com</Email>
@@ -1984,19 +1986,17 @@ permission to make it available.</Description>
         </Source>
     </Package>
     <Package>
-        <Name>mate-utils-devel</Name>
-        <Summary xml:lang="en">Development files for mate-utils</Summary>
-        <Description xml:lang="en">Utilities for the MATE Desktop such as a screenshot tool</Description>
+        <Name>mate-polkit-devel</Name>
+        <Summary xml:lang="en">Development files for mate-polkit</Summary>
+        <Description xml:lang="en">MATE PolicyKit Agent</Description>
         <PartOf>programming.devel</PartOf>
-        <License>GPL-2.0</License>
-        <License>GFDL-1.1</License>
-        <License>LGPL-2.1</License>
+        <License>LGPL-2.0</License>
         <RuntimeDependencies>
-            <Dependency releaseFrom="66">libgtk-3-devel</Dependency>
-            <Dependency release="8">mate-utils</Dependency>
+            <Dependency release="8">mate-polkit</Dependency>
+            <Dependency releaseFrom="17">polkit-devel</Dependency>
         </RuntimeDependencies>
         <Provides>
-            <PkgConfig>mate-dict</PkgConfig>
+            <PkgConfig>polkit-gtk-mate-1</PkgConfig>
         </Provides>
         <History>
             <Update release="8">
@@ -2011,13 +2011,13 @@ permission to make it available.</Description>
         <Distribution>Solus</Distribution>
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
-        <InstalledSize>48247</InstalledSize>
-        <PackageSize>8658</PackageSize>
-        <PackageHash>d2b21b6b70ad57bc7d50d6b2244201591e2964ee</PackageHash>
-        <PackageURI>mate-utils-devel-1.19.0-8-1-x86_64.eopkg</PackageURI>
+        <InstalledSize>6902</InstalledSize>
+        <PackageSize>3076</PackageSize>
+        <PackageHash>483b9c4ed71a23e844bcdd911b34d34d97ba175b</PackageHash>
+        <PackageURI>mate-polkit-devel-1.19.0-8-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
-            <Name>mate-utils</Name>
+            <Name>mate-polkit</Name>
             <Packager>
                 <Name>Thanos Apostolou</Name>
                 <Email>thanosapostolou@outlook.com</Email>
