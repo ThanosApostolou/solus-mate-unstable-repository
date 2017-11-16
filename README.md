@@ -6,6 +6,8 @@ Run:
 ```
 sudo eopkg ar --at 0 SolusMateUnstableRepository http://raw.github.com/ThanosApostolou/solus-mate-unstable-repository/master/eopkg-index.xml.xz
 ```
+(apparently **http://** is needed in order to work)
+
 Make sure that the repository is the first one at the top (it matters for priority reasons) by running:
 ```
 eopkg lr
