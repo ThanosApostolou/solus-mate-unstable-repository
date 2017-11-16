@@ -1,0 +1,158 @@
+<PISI>
+    <Package>
+        <Name>mate-common</Name>
+        <Summary xml:lang="en">Tools to build MATE from git</Summary>
+        <Description xml:lang="en">Tools to build MATE from git</Description>
+        <PartOf>programming.tools</PartOf>
+        <License>GPL-3.0</License>
+        <History>
+            <Update release="3">
+                <Date>2017-11-16</Date>
+                <Version>1.19.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>35017</InstalledSize>
+        <PackageSize>12026</PackageSize>
+        <PackageHash>71ff99b297bab70d0e594c6dd8675dfc5f3ff6b6</PackageHash>
+        <PackageURI>mate-common-1.19.0-3-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-common</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-desktop-docs</Name>
+        <Summary xml:lang="en">Documentation for mate-desktop</Summary>
+        <Description xml:lang="en">mate-desktop contains the libmate-desktop library, the mate-about program as well as some desktop-wide documents.</Description>
+        <PartOf>programming.docs</PartOf>
+        <License>GPL-2.0</License>
+        <License>LGPL-2.0</License>
+        <License>GFDL-1.1</License>
+        <History>
+            <Update release="9">
+                <Date>2017-11-16</Date>
+                <Version>1.19.1</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>286120</InstalledSize>
+        <PackageSize>27600</PackageSize>
+        <PackageHash>1f8bf3389120b5531d52c9946a1189b5c0408933</PackageHash>
+        <PackageURI>mate-desktop-docs-1.19.1-9-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-desktop</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-desktop</Name>
+        <Summary xml:lang="en">Core library for MATE Desktop applications</Summary>
+        <Description xml:lang="en">mate-desktop contains the libmate-desktop library, the mate-about program as well as some desktop-wide documents.</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <License>LGPL-2.0</License>
+        <License>GFDL-1.1</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="66">libgtk-3</Dependency>
+            <Dependency releaseFrom="15">dconf</Dependency>
+            <Dependency releaseFrom="29">libcairo</Dependency>
+            <Dependency releaseFrom="47">glibc</Dependency>
+            <Dependency releaseFrom="15">libx11</Dependency>
+            <Dependency releaseFrom="30">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="18">libatk</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency releaseFrom="39">glib2</Dependency>
+            <Dependency releaseFrom="8">libxrandr</Dependency>
+            <Dependency releaseFrom="5">libstartup-notification</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="9">
+                <Date>2017-11-16</Date>
+                <Version>1.19.1</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>2648860</InstalledSize>
+        <PackageSize>561865</PackageSize>
+        <PackageHash>71ccc093a653c04eff5d80747536acbc2e8143fa</PackageHash>
+        <PackageURI>mate-desktop-1.19.1-9-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-desktop</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mate-desktop-devel</Name>
+        <Summary xml:lang="en">Development files for mate-desktop</Summary>
+        <Description xml:lang="en">mate-desktop contains the libmate-desktop library, the mate-about program as well as some desktop-wide documents.</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>GPL-2.0</License>
+        <License>LGPL-2.0</License>
+        <License>GFDL-1.1</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="66">libgtk-3-devel</Dependency>
+            <Dependency releaseFrom="5">libstartup-notification-devel</Dependency>
+            <Dependency releaseFrom="15">dconf-devel</Dependency>
+            <Dependency release="9">mate-desktop</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <PkgConfig>mate-desktop-2.0</PkgConfig>
+        </Provides>
+        <History>
+            <Update release="9">
+                <Date>2017-11-16</Date>
+                <Version>1.19.1</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>65934</InstalledSize>
+        <PackageSize>13221</PackageSize>
+        <PackageHash>67f9b4b1b7fe99ae5e084b0152d7c2bdf4021d76</PackageHash>
+        <PackageURI>mate-desktop-devel-1.19.1-9-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-desktop</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+</PISI>
