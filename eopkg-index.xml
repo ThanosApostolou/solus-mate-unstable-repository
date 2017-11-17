@@ -185,8 +185,8 @@
         <License>GPL-2.0</License>
         <License>LGPL-2.0</License>
         <History>
-            <Update release="13">
-                <Date>2017-11-16</Date>
+            <Update release="10013">
+                <Date>2017-11-17</Date>
                 <Version>1.19.2</Version>
                 <Comment>Packaging update</Comment>
                 <Name>Thanos Apostolou</Name>
@@ -198,9 +198,9 @@
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
         <InstalledSize>214079</InstalledSize>
-        <PackageSize>23255</PackageSize>
-        <PackageHash>f996ff394eccb4eb0f89b7b14cce17b8c8deee08</PackageHash>
-        <PackageURI>caja-docs-1.19.2-13-1-x86_64.eopkg</PackageURI>
+        <PackageSize>23259</PackageSize>
+        <PackageHash>78e8f28e3622b725cc056159e4be1f3e3e7afb49</PackageHash>
+        <PackageURI>caja-docs-1.19.2-10013-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>caja</Name>
@@ -1021,8 +1021,8 @@ and voltage readings under Linux.</Description>
             <Dependency>gvfs</Dependency>
         </RuntimeDependencies>
         <History>
-            <Update release="13">
-                <Date>2017-11-16</Date>
+            <Update release="10013">
+                <Date>2017-11-17</Date>
                 <Version>1.19.2</Version>
                 <Comment>Packaging update</Comment>
                 <Name>Thanos Apostolou</Name>
@@ -1034,9 +1034,9 @@ and voltage readings under Linux.</Description>
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
         <InstalledSize>17589928</InstalledSize>
-        <PackageSize>3701931</PackageSize>
-        <PackageHash>271781cbe0bb814b8cb07a15d018167b21d54f83</PackageHash>
-        <PackageURI>caja-1.19.2-13-1-x86_64.eopkg</PackageURI>
+        <PackageSize>3701949</PackageSize>
+        <PackageHash>14d7e97d14226cfd8ececd6dcf37451457d26006</PackageHash>
+        <PackageURI>caja-1.19.2-10013-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>caja</Name>
@@ -1731,15 +1731,15 @@ permission to make it available.</Description>
         <License>LGPL-2.0</License>
         <RuntimeDependencies>
             <Dependency releaseFrom="66">libgtk-3-devel</Dependency>
-            <Dependency release="13">caja</Dependency>
+            <Dependency release="10013">caja</Dependency>
             <Dependency releaseFrom="39">glib2-devel</Dependency>
         </RuntimeDependencies>
         <Provides>
             <PkgConfig>libcaja-extension</PkgConfig>
         </Provides>
         <History>
-            <Update release="13">
-                <Date>2017-11-16</Date>
+            <Update release="10013">
+                <Date>2017-11-17</Date>
                 <Version>1.19.2</Version>
                 <Comment>Packaging update</Comment>
                 <Name>Thanos Apostolou</Name>
@@ -1751,9 +1751,9 @@ permission to make it available.</Description>
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
         <InstalledSize>39218</InstalledSize>
-        <PackageSize>7772</PackageSize>
-        <PackageHash>4660bd7f4d52dcd4069a7e840231818834c9621b</PackageHash>
-        <PackageURI>caja-devel-1.19.2-13-1-x86_64.eopkg</PackageURI>
+        <PackageSize>7771</PackageSize>
+        <PackageHash>fd5efca91d9875112aeab29ef288100e74b09ebc</PackageHash>
+        <PackageURI>caja-devel-1.19.2-10013-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>caja</Name>
