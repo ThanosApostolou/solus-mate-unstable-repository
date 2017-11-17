@@ -12,8 +12,13 @@ Make sure that the repository is the first one at the top (it matters for priori
 ```
 eopkg lr
 ```
-It is recommended to use the Unstable repository for this. So, you should have 1st priority SolusMateUnstableRepository, 2nd SolusUnstable and 3rd Solus. To fix repository order remove the one you want and add them again, for example:
+It is recommended to use the Unstable repository for this. So, you should have 1st priority SolusMateUnstableRepository, 2nd SolusUnstable and 3rd Solus. It is recommended that you also disable the Solus (stable) repository because it can cause problems when the SolusUnstable Repository at the same time. To fix repository order remove the one you want and add them again, for example:
 ```
 sudo eopkg ar --at 1 SolusUnstable https://packages.solus-project.com/unstable/eopkg-index.xml.xz
 sudo eopkg rr Solus
 sudo eopkg ar --at 2 Solus https://packages.solus-project.com/shannon/eopkg-index.xml.xz
+sudo eopkg dr Solus
+```
+Then run `eopkg lr` in order to verify that repositories have the correct order and that the Solus (stable) one is disabled. 
+
+Note that SolusUnstable with Solus have only a few days difference. I build the packages against SolusUnstable Repository but with a little delay (depending on my free time). So, unless there is any huge ABI breakage and need for massive rebuild, then it should be safe to just use the Solus (stable) repository too (if you are afraid of the SolusUnstable).
