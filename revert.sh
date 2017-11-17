@@ -82,7 +82,7 @@ do
 	#if package is installed
 	if (is_installed $package_name)
 	then
-		reinstall package from the official repositories
+		#reinstall package from the official repositories
 		sudo eopkg it --reinstall $package_name
 	fi
 done
