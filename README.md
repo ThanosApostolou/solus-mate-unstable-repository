@@ -19,7 +19,7 @@ sudo eopkg dr Solus
 Then run `eopkg lr` in order to verify that repositories have the correct order and that the Solus (stable) one is disabled. 
 
 # Revert Changes
-In order to revert the changes you need to remove my repository and then reinstall each package from the official repositories. You can use the script **revert.sh** in order to do that automatically.
+In order to revert the changes you need to remove my repository and then reinstall each package from the official repositories. You can use the script **help-revert.sh** in order to do that automatically.
 
 # Build Instructions:
 1. git clone https://github.com/ThanosApostolou/solus-mate-unstable-repository.git
@@ -28,5 +28,5 @@ In order to revert the changes you need to remove my repository and then reinsta
 4. Copy packages from each folder to **/var/lib/solbuild/local** (user help-copy.sh)
 5. Build accordingly to mate-build-order.txt with command `make local`
 6. Copy every new package to **/var/lib/solbuild/local** before you build the next one
-7. After you build last package, then open terminal to git repository's folder and then `eopkg index --skip-signing` (user help-index.sh)
+7. After you build last package, then open terminal to git repository's folder and then `eopkg index --skip-signing` (use help-index.sh)
 8. push changes to github
