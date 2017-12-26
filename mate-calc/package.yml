@@ -1,0 +1,25 @@
+name       : mate-calc
+version    : 1.19.0
+release    : 1004
+source     :
+    - http://pub.mate-desktop.org/releases/1.19/mate-calc-1.19.0.tar.xz : 006078507bda24551230040809978ed503ba12461da821389f5c338a6377b939
+license    : GPL-2.0
+component  : desktop.mate
+summary    : Calculator tool for the MATE desktop
+description: |
+    This is `mate-calc`, a fork of `gnome-calc`, the calculator application
+    that was previously in the OpenWindows Deskset of the Solaris 8
+    operating system.
+
+    It incorporates a multiple precision arithmetic packages based on the
+    work of Professor Richard Brent, who has also kindly given me
+    permission to make it available.
+builddeps  :
+    - pkgconfig(gtk+-3.0)
+    - itstool
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install

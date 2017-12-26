@@ -1,0 +1,23 @@
+name       : mate-terminal
+version    : 1.19.1
+release    : 1009
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/mate-terminal-1.19.1.tar.xz : dff8f97fcee8386984692db99ce08a8fe2c34e8f7d98fb697ac0d5cea99ff2f5
+license    : GPL-3.0
+component  : desktop.mate
+summary    : Mate Desktop Terminal Emulator
+description: |
+    Mate Desktop Terminal Emulator
+builddeps  :
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(mate-desktop-2.0)
+    - pkgconfig(sm)
+    - pkgconfig(vte-2.91)
+    - pkgconfig(x11)
+    - itstool
+setup      : |
+    %configure --with-gtk=3.0
+build      : |
+    %make
+install    : |
+    %make_install

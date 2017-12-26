@@ -1,0 +1,35 @@
+name       : marco
+version    : 1.19.2
+release    : 10010
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/marco-1.19.2.tar.xz : d4a6e238072d4d6d8aaccab022df5327fd8ac2f966308461bc0edeb5e771f389
+license    : GPL-2.0
+component  : desktop.mate
+summary    : Window manager of the MATE Desktop
+description: |
+    Window manager of the MATE Desktop
+builddeps  :
+    - pkgconfig(libcanberra-gtk3)
+    - pkgconfig(libstartup-notification-1.0)
+    - pkgconfig(glib-2.0)
+    - pkgconfig(glib-2.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(pangoxft)
+    - pkgconfig(sm)
+    - pkgconfig(xft)
+    - pkgconfig(xcursor)
+    - pkgconfig(xpresent)
+    - pkgconfig(yelp-xsl)
+    - itstool
+    - yelp-tools-devel
+    - zenity
+rundeps    :
+    - mate-desktop
+    - zenity
+setup      : |
+    %patch -p1 < $pkgfiles/0001-Start-late-to-fight-panel-race-condition.patch
+    %configure --disable-static
+build      : |
+    %make
+install    : |
+    %make_install

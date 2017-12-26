@@ -1,0 +1,28 @@
+name       : mate-desktop
+version    : 1.19.2
+release    : 10010
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/mate-desktop-1.19.2.tar.xz : 48af5795ce6c98fb6c8d8aa83d53a0f6dda5619c2523122118719d1da42ce76c
+license    :
+    - GPL-2.0
+    - LGPL-2.0
+    - GFDL-1.1
+component  : desktop.mate
+summary    : Core library for MATE Desktop applications
+description: |
+    mate-desktop contains the libmate-desktop library, the mate-about program as well as some desktop-wide documents.
+builddeps  :
+    - pkgconfig(dconf)
+    - pkgconfig(gdk-pixbuf-2.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libstartup-notification-1.0)
+    - pkgconfig(x11)
+    - mate-common
+setup      : |
+    %reconfigure --disable-static \
+                 --with-x \
+                 --with-pnp-ids-path=/usr/share/hwdata/pnp.ids
+build      : |
+    %make
+install    : |
+    %make_install

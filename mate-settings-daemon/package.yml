@@ -1,0 +1,39 @@
+name       : mate-settings-daemon
+version    : 1.19.1
+release    : 10015
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/mate-settings-daemon-1.19.1.tar.xz : 33180e64a9d247db563b297291957b0931ebce13f2c5bb736b0789e5bd8b0059
+license    :
+    - GPL-2.0
+    - LGPL-2.1
+component  : desktop.mate
+summary    : MATE Settings Daemon
+description: |
+    Settings Daemon for the MATE Desktop
+builddeps  :
+    - pkgconfig(dconf)
+    - pkgconfig(dbus-glib-1)
+    - pkgconfig(fontconfig)
+    - pkgconfig(gio-unix-2.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(ice)
+    - pkgconfig(libcanberra-gtk3)
+    - pkgconfig(libmatekbdui)
+    - pkgconfig(libmatemixer)
+    - pkgconfig(libmatekbd)
+    - pkgconfig(libnotify)
+    - pkgconfig(libpulse)
+    - pkgconfig(libxklavier)
+    - pkgconfig(mate-desktop-2.0)
+    - pkgconfig(nss)
+    - pkgconfig(sm)
+rundeps    :
+    - xmodmap
+    - xrdb
+setup      : |
+    %patch -p1 < $pkgfiles/0001-Use-stateless-directories.patch
+    %reconfigure --with-gtk=3.0
+build      : |
+    %make
+install    : |
+    %make_install

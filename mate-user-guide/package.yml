@@ -1,0 +1,20 @@
+name       : mate-user-guide
+version    : 1.19.0
+release    : 1002
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/mate-user-guide-1.19.0.tar.xz : bc87fa955183e6ec255bb5a335b428b550673e6c928c6872ec7bb2c37753e006
+license    : GFDL-1.1
+component  : desktop.mate
+summary    : This package contains documents which will be packaged together and shipped as mate-user-guide in the core MATE distribution.
+description: |
+    This package contains documents which will be packaged together and shipped as mate-user-guide in the core MATE distribution.  They should be documents targeted for end-users of MATE and have general MATE applicability.
+builddeps  :
+    - itstool
+rundeps    :
+    - yelp
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install

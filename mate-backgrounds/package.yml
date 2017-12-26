@@ -1,0 +1,16 @@
+name       : mate-backgrounds
+version    : 1.19.0
+release    : 1005
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/mate-backgrounds-1.19.0.tar.xz : c82407cf8a741fe57c9fde72515d4a17509ebe162e6c5177de120a5d3b85d573
+license    : GPL-2.0
+component  : desktop.mate
+summary    : Background images for the MATE desktop
+description: |
+    Background images and data for MATE. The MATE backgrounds are a fork of GNOME backgrounds.
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install

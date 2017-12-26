@@ -1,0 +1,18 @@
+name       : mate-common
+version    : 1.19.0
+release    : 1004
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/mate-common-1.19.0.tar.xz : 369498b287ae7cde0032942a530b4e7fd908c26f5399b964045c5c545964fdeb
+license    : GPL-3.0
+component  : programming.tools
+summary    : Tools to build MATE from git
+patterns   :
+    - /*
+description: |
+    Tools to build MATE from git
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install

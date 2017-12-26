@@ -1,0 +1,19 @@
+name       : libmatekbd
+version    : 1.19.1
+release    : 1008
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/libmatekbd-1.19.1.tar.xz : 52f4462adbd67424579c1c00fa5b4899c775b8b9a6b5b6b9f32dd3dc78190938
+license    : LGPL-2.1
+summary    : libmatekbd is a fork of libgnomekbd
+component  : desktop.mate
+description: |
+    libmatekbd is a fork of libgnomekbd
+builddeps  :
+    - pkgconfig(gdk-3.0)
+    - pkgconfig(libxklavier)
+setup      : |
+    %configure --with-gtk=3.0 --disable-static
+build      : |
+    %make
+install    : |
+    %make_install

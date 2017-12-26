@@ -1,0 +1,35 @@
+name       : mate-panel
+version    : 1.19.4
+release    : 10012
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/mate-panel-1.19.4.tar.xz : f72e9e7caf9396c059dd735d4390fb98161d4395810529b0c6cf7e5fb500b86a
+license    :
+    - GPL-2.0
+    - LGPL-2.0
+    - GFDL-1.1
+component  : desktop.mate
+summary    : The panel of the MATE Desktop
+description: |
+    The panel of the MATE Desktop Environment
+builddeps  :
+    - pkgconfig(dbus-glib-1)
+    - pkgconfig(ice)
+    - pkgconfig(sm)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(gmodule-2.0)
+    - pkgconfig(libcanberra-gtk3)
+    - pkgconfig(libmate-menu)
+    - pkgconfig(libwnck-3.0)
+    - pkgconfig(librsvg-2.0)
+    - pkgconfig(mate-desktop-2.0)
+    - pkgconfig(mateweather)
+    - pkgconfig(xau)
+    - pkgconfig(x11)
+    - pkgconfig(xrandr)
+    - itstool
+setup      : |
+    %configure --disable-static --with-gtk=3.0 --with-x
+build      : |
+    %make
+install    : |
+    %make_install

@@ -1,0 +1,25 @@
+name       : mate-polkit
+version    : 1.19.0
+release    : 1009
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/mate-polkit-1.19.0.tar.xz : 3a113480c1b3eb95e8a09ac7d1314c9aa8f8c9f8b69b46159c3f5df48491e545
+license    : LGPL-2.0
+summary    : MATE PolicyKit Agent
+component  : desktop.mate
+description: |
+    MATE PolicyKit Agent
+builddeps  :
+    - pkgconfig(appindicator3-0.1)
+    - pkgconfig(gtk+-3.0)
+rundeps    :
+    - accountsservice
+setup      : |
+    %configure --disable-static \
+               --enable-accountsservice \
+               --enable-appindicator
+build      : |
+    %make
+install    : |
+    %make_install
+    mv $installdir/etc/xdg $installdir/usr/share/.
+    rmdir $installdir/etc

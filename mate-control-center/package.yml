@@ -1,0 +1,37 @@
+name       : mate-control-center
+version    : 1.19.2
+release    : 10015
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/mate-control-center-1.19.2.tar.xz : fa60d3623e9db615968230a607757eac2eb8dfd7e5d3295ebbc0c0c7bc799bf9
+license    : GPL-2.0
+summary    : MATE Control Center
+component  : desktop.mate
+description: |
+    MATE Control Center
+builddeps  :
+    - pkgconfig(appindicator3-0.1)
+    - pkgconfig(gio-2.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libcanberra-gtk3)
+    - pkgconfig(libmate-menu)
+    - pkgconfig(libmatekbd)
+    - pkgconfig(libmarco-private)
+    - pkgconfig(librsvg-2.0)
+    - pkgconfig(mate-desktop-2.0)
+    - pkgconfig(mate-settings-daemon)
+    - pkgconfig(pango)
+    - pkgconfig(shared-mime-info)
+    - pkgconfig(unique-3.0)
+    - pkgconfig(xcursor)
+    - pkgconfig(xscrnsaver)
+    - desktop-file-utils
+    - itstool
+setup      : |
+    %configure --with-gtk=3.0 --disable-update-mimedb
+build      : |
+    %make
+install    : |
+    %make_install
+    mv $installdir/etc/xdg $installdir/usr/share/.
+    rmdir $installdir/etc
+    rm $installdir/usr/share/applications/mimeinfo.cache

@@ -1,0 +1,29 @@
+name       : mate-session-manager
+version    : 1.19.1
+release    : 1008
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/mate-session-manager-1.19.1.tar.xz : 8b07630eb97ea86bc3813e2a72cfab240d43e5d456f02999265bb08aeea7204b
+license    : GPL-2.0
+component  : desktop.mate
+summary    : MATE Session Management
+description: |
+    MATE Session Management
+builddeps  :
+    - pkgconfig(dbus-glib-1)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(ice)
+    - pkgconfig(libsystemd)
+    - pkgconfig(sm)
+    - pkgconfig(upower-glib)
+    - pkgconfig(x11)
+    - pkgconfig(xau)
+    - pkgconfig(xext)
+    - pkgconfig(xrender)
+    - pkgconfig(xtst)
+    - xtrans
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
