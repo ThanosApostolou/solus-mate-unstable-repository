@@ -1,0 +1,18 @@
+name       : mate-icon-theme
+version    : 1.19.0
+release    : 1006
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/mate-icon-theme-1.19.0.tar.xz : cdc89132052ae865b723d21bb09fdf370b4bd6cce2492a638303741d0385f0c9
+license    : CC-BY-SA-3.0
+component  : desktop.mate
+summary    : MATE Desktop Icon Theme
+description: |
+    The standard icon theme for the MATE Desktop
+builddeps  :
+    - pkgconfig(icon-naming-utils)
+setup      : |
+    %configure --enable-icon-mapping
+build      : |
+    %make
+install    : |
+    %make_install

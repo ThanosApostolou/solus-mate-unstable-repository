@@ -1,0 +1,23 @@
+name       : caja-extensions
+version    : 1.19.0
+release    : 1006
+source     :
+    - http://pub.mate-desktop.org/releases/1.19/caja-extensions-1.19.0.tar.xz : 79e60830b2074d7f1ce3dffaba17e5378adc2a8f5ac6e432c86fdefc756a8bf9
+license    : GPL-2.0
+component  : desktop.mate
+summary    : Set of extensions for Caja, the MATE file manager.
+description: |
+    Set of extensions for Caja, the MATE file manager.
+builddeps  :
+    - pkgconfig(dbus-glib-1)
+    - pkgconfig(gupnp-1.0)
+    - pkgconfig(libcaja-extension)
+    - pkgconfig(mate-desktop-2.0)
+    - gtk-doc
+    - mate-common
+setup      : |
+    ./autogen.sh %CONFOPTS% --with-gtk=3.0 --enable-gksu=no
+build      : |
+    %make
+install    : |
+    %make_install

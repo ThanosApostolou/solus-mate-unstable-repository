@@ -1,0 +1,20 @@
+name       : libmateweather
+version    : 1.19.1
+release    : 10010
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/libmateweather-1.19.1.tar.xz : cc398203457e55a09eb961bebe82d60afe4c034b35998e4e8a253bc47f6e0c79
+license    : GPL-2.1
+component  : desktop.mate
+summary    : MATE weather access library
+description: |
+    libmateweather is a library to access weather information from online services for numerous locations.
+builddeps  :
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libsoup-2.4)
+    - pkgconfig(pygobject-2.0)
+setup      : |
+    %configure --disable-static --with-gtk=3.0
+build      : |
+    %make
+install    : |
+    %make_install

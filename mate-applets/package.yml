@@ -1,0 +1,37 @@
+name       : mate-applets
+version    : 1.19.2
+release    : 10012
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/mate-applets-1.19.2.tar.xz : 203e8f64dead33028784604657458b43032ccbde496dee6726276d93fd96b9e4
+license    :
+    - GPL-2.0
+    - GFDL-1.1
+component  : desktop.mate
+summary    : Applets for the MATE Desktop
+description: |
+    Applets for the MATE Desktop
+builddeps  :
+    - pkgconfig(dbus-glib-1)
+    - pkgconfig(dbus-python)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(gtksourceview-3.0)
+    - pkgconfig(ice)
+    - pkgconfig(libgtop-2.0)
+    - pkgconfig(libmatepanelapplet-4.0)
+    - pkgconfig(libnotify)
+    - pkgconfig(libwnck-3.0)
+    - pkgconfig(mate-desktop-2.0)
+    - pkgconfig(mateweather)
+    - pkgconfig(polkit-agent-1)
+    - pkgconfig(pygobject-3.0)
+    - pkgconfig(sm)
+    - pkgconfig(upower-glib)
+    - itstool
+    - linux-tools-cpupower-devel
+    - wireless-tools-devel
+setup      : |
+    %configure --disable-static
+build      : |
+    %make
+install    : |
+    %make_install

@@ -1,0 +1,22 @@
+name       : libmatemixer
+version    : 1.19.0
+release    : 1007
+source     :
+    - http://pub.mate-desktop.org/releases/1.19/libmatemixer-1.19.0.tar.xz : fc99e23c24a97774d9736c4571f9c815702c3f5f143435ef8de8e27331865938
+license    : LGPL-2.1
+component  : desktop.mate
+summary    : libmatemixer is a mixer library for MATE desktop.
+description: |
+    libmatemixer is a mixer library for MATE desktop.
+builddeps  :
+    - pkgconfig(alsa)
+    - pkgconfig(gobject-2.0)
+    - pkgconfig(libpulse-mainloop-glib)
+setup      : |
+    %configure --enable-pulseaudio \
+               --enable-alsa \
+               --disable-static
+build      : |
+    %make
+install    : |
+    %make_install

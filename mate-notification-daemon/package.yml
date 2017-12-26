@@ -1,0 +1,24 @@
+name       : mate-notification-daemon
+version    : 1.19.0
+release    : 1007
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/mate-notification-daemon-1.19.0.tar.xz : e20185024dff03893611e6e8e051cd1d069e52f829e694f7503999a0443a37f7
+license    : GPL-2.0
+component  : desktop.mate
+summary    : XDG Notifications Daemon for MATE Desktop
+description: |
+    XDG Notifications Daemon for MATE Desktop
+builddeps  :
+    - pkgconfig(dbus-glib-1)
+    - pkgconfig(gmodule-2.0)
+    - pkgconfig(gdk-pixbuf-2.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libwnck-3.0)
+    - pkgconfig(libcanberra-gtk3)
+    - pkgconfig(libnotify)
+setup      : |
+    %configure --with-gtk=3.0
+build      : |
+    %make
+install    : |
+    %make_install

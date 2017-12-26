@@ -25,3 +25,13 @@ Note that SolusUnstable with Solus have only a few days difference. I build the 
 
 # Revert Changes
 In order to revert the changes you need to remove my repository and then reinstall each package from the official repositories. You can use the script **revert.sh** in order to do that automatically.
+
+# Build Instructions:
+1. git clone https://github.com/ThanosApostolou/solus-mate-unstable-repository.git
+2. git clone https://dev.solus-project.com/source/common.git
+3. cd solus-mate-unstable-repository
+4. Copy packages from each folder to **/var/lib/solbuild/local** (user help-copy.sh)
+5. Build accordingly to mate-build-order.txt with command `make local`
+6. Copy every new package to **/var/lib/solbuild/local** before you build the next one
+7. After you build last package, then open terminal to git repository's folder and then `eopkg index --skip-signing` (user help-index.sh)
+8. push changes to github

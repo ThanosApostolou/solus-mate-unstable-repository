@@ -1,0 +1,29 @@
+name       : pluma
+version    : 1.19.3
+release    : 1008
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/pluma-1.19.3.tar.xz : 46e27fbd67b985397b8f85e65aefbb3531bb90a28cd0ca41f7d608280c98dfc4
+license    : GPL-2.0
+component  : desktop.mate
+summary    : Text Editor for the MATE Desktop
+description: |
+    Text Editor for the MATE Desktop
+builddeps  :
+    - pkgconfig(enchant)
+    - pkgconfig(gmodule-2.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(gtksourceview-3.0)
+    - pkgconfig(libpeas-1.0)
+    - pkgconfig(libpeas-gtk-1.0)
+    - pkgconfig(mate-desktop-2.0)
+    - pkgconfig(pygobject-2.0)
+    - pkgconfig(pygtk-2.0)
+    - pkgconfig(sm)
+    - pkgconfig(x11)
+    - itstool
+setup      : |
+    %configure --with-gtk=3.0
+build      : |
+    %make
+install    : |
+    %make_install

@@ -1,0 +1,30 @@
+name       : caja-dropbox
+version    : 1.18.0
+release    : 1004
+source     :
+    - https://pub.mate-desktop.org/releases/1.18/caja-dropbox-1.18.0.tar.xz : af88597b7da5815f7debe33c1bb95098a21abe4a7057e9834546752597428da3
+license    :
+    - CC-BY-ND-3.0
+    - GPL-3.0
+summary    : Dropbox linux client
+component  : desktop.mate
+description: |
+    Dropbox Linux client for the MATE Desktop
+builddeps  :
+    - pkgconfig(libcaja-extension)
+    - pkgconfig(glib-2.0)
+    - pkgconfig(pygtk-2.0)
+    - pkgconfig(pygobject-2.0)
+    - pkgconfig(pycairo)
+    - python-docutils
+rundeps    :
+    - python-gobject2
+    - python-pygpgme
+    - python-gtk2
+    - python-cairo
+setup      : |
+    %configure --disable-static
+build      : |
+    %make
+install    : |
+    %make_install

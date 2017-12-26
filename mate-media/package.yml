@@ -1,0 +1,29 @@
+name       : mate-media
+version    : 1.19.1
+release    : 10011
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/mate-media-1.19.1.tar.xz : fb567f4295f9a549152cfab4ebcc0ed87671cdab123b8a5542132c3e263d96b5
+license    :
+    - GPL-2.0
+    - GFDL-1.1
+component  : desktop.mate
+summary    : MATE Volume Control Applet
+description: |
+    MATE Volume Control Applet
+builddeps  :
+    - pkgconfig(gobject-2.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libcanberra-gtk3)
+    - pkgconfig(libmatemixer)
+    - pkgconfig(mate-desktop-2.0)
+    - pkgconfig(unique-3.0)
+rundeps    :
+    - sound-theme-freedesktop
+setup      : |
+    %configure --disable-static
+build      : |
+    %make
+install    : |
+    %make_install
+    mv $installdir/etc/xdg $installdir/usr/share/.
+    rmdir $installdir/etc

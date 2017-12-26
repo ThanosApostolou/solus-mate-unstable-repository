@@ -1,0 +1,23 @@
+name       : mate-menus
+version    : 1.19.0
+release    : 1009
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/mate-menus-1.19.0.tar.xz : 74b4467f77d52c868278a79d4b544a91ec8b61ac96bbe4fd109200579d84567e
+license    :
+    - GPL-2.0
+    - LGPL-2.0
+component  : desktop.mate
+summary    : Provides the MATE implementation of XDG Menus
+description: |
+    The libmate-menu library implements the "Desktop Menu Specification" from freedesktop.org
+builddeps  :
+    - pkgconfig(glib-2.0)
+    - pkgconfig(python-2.7)
+setup      : |
+    %configure --disable-static
+build      : |
+    %make
+install    : |
+    %make_install
+    mv $installdir/etc/xdg $installdir/usr/share/.
+    rmdir $installdir/etc

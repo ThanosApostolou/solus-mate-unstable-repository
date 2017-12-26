@@ -1,0 +1,20 @@
+name       : mate-icon-theme-faenza
+version    : 1.19.0
+release    : 1002
+source     :
+    - http://pub.mate-desktop.org/releases/1.19/mate-icon-theme-faenza-1.19.0.tar.xz : 91ed72d9f413f0240b35cf41bcd201544f989a411b091781072a0cb51ef02d32
+license    : CC-BY-SA-3.0
+component  : desktop.mate
+summary    : MATE Desktop Faenza Icon Theme
+description: |
+    The faenza icon theme variant for the MATE Desktop
+builddeps  :
+    - mate-common
+    - pkgconfig(icon-naming-utils)
+setup      : |
+    %autogen
+    %configure --enable-icon-mapping
+build      : |
+    %make
+install    : |
+    %make_install

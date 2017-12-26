@@ -1,0 +1,27 @@
+name       : mate-system-monitor
+version    : 1.19.0
+release    : 1007
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/mate-system-monitor-1.19.0.tar.xz : 8357b13cdb7ac8050701c5374869c0269b72e1ad89339ebd43ae86ad54c4bb75
+license    : GPL-2.0
+component  : desktop.mate
+summary    : MATE System Monitor
+description: |
+    MATE System Monitor
+builddeps  :
+    - pkgconfig(atkmm-1.6)
+    - pkgconfig(gmodule-2.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(gtkmm-3.0)
+    - pkgconfig(glibmm-2.4)
+    - pkgconfig(libgtop-2.0)
+    - pkgconfig(librsvg-2.0)
+    - pkgconfig(libsystemd)
+    - pkgconfig(libwnck-3.0)
+    - itstool
+setup      : |
+    %configure --enable-systemd
+build      : |
+    %make
+install    : |
+    %make_install

@@ -1,0 +1,28 @@
+name       : mate-utils
+version    : 1.19.1
+release    : 1009
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/mate-utils-1.19.1.tar.xz : f36564f9094c7425692518493cc2c72f80c2a7812c1ab0a8b031c22c46ef7bd0
+license    :
+    - GPL-2.0
+    - GFDL-1.1
+    - LGPL-2.1
+component  : desktop.mate
+summary    : Utilities for the MATE Desktop
+description: |
+    Utilities for the MATE Desktop such as a screenshot tool
+builddeps  :
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libcanberra-gtk3)
+    - pkgconfig(libgtop-2.0)
+    - pkgconfig(libmatepanelapplet-4.0)
+    - pkgconfig(sm)
+    - pkgconfig(xext)
+    - pkgconfig(x11)
+    - itstool
+setup      : |
+    %configure --disable-static --with-gtk=3.0
+build      : |
+    %make
+install    : |
+    %make_install

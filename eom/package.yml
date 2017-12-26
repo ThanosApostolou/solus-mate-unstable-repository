@@ -1,0 +1,30 @@
+name       : eom
+version    : 1.19.1
+release    : 10010
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/eom-1.19.1.tar.xz : 27819fd426be72e48f46aa7f8fe6a8df17fcb51b437fee772c70b108bfca508d
+license    : GPL-2.0
+component  : desktop.mate
+summary    : Eye Of MATE - Image Viewer
+description: |
+    Eye Of MATE is the Image Viewer of the MATE Desktop
+builddeps  :
+    - pkgconfig(exempi-2.0)
+    - pkgconfig(gmodule-2.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(lcms2)
+    - pkgconfig(libexif)
+    - pkgconfig(libpeas-1.0)
+    - pkgconfig(libpeas-gtk-1.0)
+    - pkgconfig(librsvg-2.0)
+    - pkgconfig(mate-desktop-2.0)
+    - pkgconfig(shared-mime-info)
+    - pkgconfig(x11)
+    - itstool
+    - libjpeg-turbo-devel
+setup      : |
+    %configure --disable-static --with-gtk=3.0
+build      : |
+    %make
+install    : |
+    %make_install

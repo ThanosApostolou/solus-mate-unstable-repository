@@ -1,0 +1,28 @@
+name       : mate-screensaver
+version    : 1.19.1
+release    : 1008
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/mate-screensaver-1.19.1.tar.xz : 13a76f3e38801a986a3d7cfc1813cc8bc9a5c6c4127e9e8c260001f75a6fa66b
+license    :
+    - GPL-2.0
+    - LGPL-2.0
+component  : desktop.mate
+summary    : MATE Screensaver and Locker
+description: |
+    MATE Screensaver and Locker
+builddeps  :
+    - pkgconfig(dbus-glib-1)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libmate-menu)
+    - pkgconfig(libnotify)
+    - pkgconfig(libsystemd)
+    - pkgconfig(mate-desktop-2.0)
+    - pkgconfig(x11)
+    - pkgconfig(xscrnsaver)
+setup      : |
+    %configure --with-gtk=3.0
+build      : |
+    %make
+install    : |
+    %make_install
+    mv $installdir/etc/xdg $installdir/usr/share/.

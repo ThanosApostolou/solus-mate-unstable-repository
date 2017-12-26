@@ -1,0 +1,35 @@
+name       : atril
+version    : 1.19.5
+release    : 10010
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/atril-1.19.5.tar.xz : 3d1e17037bfd7f9c028a7adb8bae5eac9e1a130577d2c51edfbecd5ec859a530
+license    : GPL-2.0
+component  : desktop.mate
+summary    : MATE Desktop Document Viewer
+description: |
+    Atril is a document viewer capable of displaying multiple and single page document formats like PDF and Postscript
+builddeps  :
+    - pkgconfig(cairo-pdf)
+    - pkgconfig(cairo-ps)
+    - pkgconfig(ddjvuapi)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(sm)
+    - pkgconfig(gtk+-x11-3.0)
+    - pkgconfig(libcaja-extension)
+    - pkgconfig(libgxps)
+    - pkgconfig(libsecret-1)
+    - pkgconfig(libsoup-2.4)
+    - pkgconfig(libtiff-4)
+    - pkgconfig(libxml-2.0)
+    - pkgconfig(poppler-glib)
+    - pkgconfig(mate-desktop-2.0)
+    - pkgconfig(webkit2gtk-4.0)
+    - pkgconfig(zlib)
+    - itstool
+setup      : |
+    %configure --disable-static \
+               --enable-epub
+build      : |
+    %make
+install    : |
+    %make_install
