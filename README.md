@@ -1,6 +1,5 @@
 # solus-mate-unstable-repository
-Repository for solus with the latest development mate packages. For build proccedure see this github repository: https://github.com/ThanosApostolou/solus-mate-unstable-ypkg/blob/master/README.md
-
+Repository for solus with the latest development mate packages.
 # Enable repository
 Run:
 ```
