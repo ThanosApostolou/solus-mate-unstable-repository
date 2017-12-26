@@ -25,8 +25,8 @@ In order to revert the changes you need to remove my repository and then reinsta
 1. git clone https://github.com/ThanosApostolou/solus-mate-unstable-repository.git
 2. git clone https://dev.solus-project.com/source/common.git
 3. cd solus-mate-unstable-repository
-4. Copy packages from each folder to **/var/lib/solbuild/local** (user help-copy.sh)
-5. Build accordingly to mate-build-order.txt with command `make local`
+4. Copy packages from each folder to **/var/lib/solbuild/local** (use help-copy.sh)
+5. Build accordingly to help-mate-build-order.txt with command `make local`
 6. Copy every new package to **/var/lib/solbuild/local** before you build the next one
 7. After you build last package, then open terminal to git repository's folder and then `eopkg index --skip-signing` (use help-index.sh)
 8. push changes to github
