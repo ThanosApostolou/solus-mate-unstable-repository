@@ -1,8 +1,8 @@
 name       : mate-notification-daemon
-version    : 1.19.0
-release    : 1007
+version    : 1.19.1
+release    : 1008
 source     :
-    - https://pub.mate-desktop.org/releases/1.19/mate-notification-daemon-1.19.0.tar.xz : e20185024dff03893611e6e8e051cd1d069e52f829e694f7503999a0443a37f7
+    - https://pub.mate-desktop.org/releases/1.19/mate-notification-daemon-1.19.1.tar.xz : 2fd42d28a377d5a896986371515db9fc4f8fe5cd54980101e2519db39d3a8ae9
 license    : GPL-2.0
 component  : desktop.mate
 summary    : XDG Notifications Daemon for MATE Desktop

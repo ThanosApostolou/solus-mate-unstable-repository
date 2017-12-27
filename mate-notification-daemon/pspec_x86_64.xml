@@ -44,9 +44,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="1007">
-            <Date>2017-12-26</Date>
-            <Version>1.19.0</Version>
+        <Update release="1008">
+            <Date>2017-12-27</Date>
+            <Version>1.19.1</Version>
             <Comment>Packaging update</Comment>
             <Name>Thanos Apostolou</Name>
             <Email>thanosapostolou@outlook.com</Email>

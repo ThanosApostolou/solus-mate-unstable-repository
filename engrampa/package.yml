@@ -1,8 +1,8 @@
 name       : engrampa
-version    : 1.19.1
-release    : 1008
+version    : 1.19.2
+release    : 1009
 source     :
-    - https://pub.mate-desktop.org/releases/1.19/engrampa-1.19.1.tar.xz : 1b4bbaab12d44d72e2ff231d717fe176d431699fb3747366fed442c103a16398
+    - https://pub.mate-desktop.org/releases/1.19/engrampa-1.19.2.tar.xz : 35f323d27b348d9b3af2c2b73f6f26cd137367fe80d02c4de61eb4342fbda4e4
 license    : GPL-2.0
 component  : desktop.mate
 summary    : Archive manager for the MATE Desktop

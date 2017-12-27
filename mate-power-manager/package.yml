@@ -1,8 +1,8 @@
 name       : mate-power-manager
-version    : 1.19.0
-release    : 10010
+version    : 1.19.1
+release    : 10011
 source     :
-    - https://pub.mate-desktop.org/releases/1.19/mate-power-manager-1.19.0.tar.xz : e8ed295576f1ce9ebf5b9cf6111f8a6425a7718ef6f135a6d892c2b20d0e9f56
+    - https://pub.mate-desktop.org/releases/1.19/mate-power-manager-1.19.1.tar.xz : 54e80a13c3c1ad584c2145c5abbbefe63997a70bcb9aab72cc8533a1aec27238
 license    : GPL-2.0
 component  : desktop.mate
 summary    : Power Managment for the MATE Desktop
