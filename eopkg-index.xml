@@ -676,6 +676,43 @@
         </Source>
     </Package>
     <Package>
+        <Name>mate-tweak</Name>
+        <Summary xml:lang="en">Tweak tool for the MATE Desktop</Summary>
+        <Description xml:lang="en">Tweak tool for the MATE Desktop</Description>
+        <PartOf>desktop.mate</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency>python3-gobject</Dependency>
+            <Dependency>python-psutil</Dependency>
+            <Dependency>python-setproctitle</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1008">
+                <Date>2018-01-30</Date>
+                <Version>18.04.7</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>683767</InstalledSize>
+        <PackageSize>124624</PackageSize>
+        <PackageHash>8949d28a4ad378b26ce7ed77ee165b4a082b942b</PackageHash>
+        <PackageURI>mate-tweak/mate-tweak-18.04.7-1008-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mate-tweak</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
         <Name>mate-backgrounds</Name>
         <Summary xml:lang="en">Background images for the MATE desktop</Summary>
         <Description xml:lang="en">Background images and data for MATE. The MATE backgrounds are a fork of GNOME backgrounds.</Description>

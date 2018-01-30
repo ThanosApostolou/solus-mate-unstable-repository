@@ -64,6 +64,7 @@ PackagesArray=(atril \
 			   mate-settings-daemon-devel \
 			   mate-system-monitor \
 			   mate-terminal \
+			   mate-tweak \
 			   mate-user-guide \
 			   mate-utils \
 			   mate-utils-devel \

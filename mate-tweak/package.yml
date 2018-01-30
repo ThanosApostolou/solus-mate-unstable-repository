@@ -1,0 +1,21 @@
+name       : mate-tweak
+version    : 18.04.7
+release    : 1008
+source     :
+    - https://github.com/ubuntu-mate/mate-tweak/archive/18.04.7.tar.gz : f58cdb03f77afd231efec159a21f33e712c48bb4b23cc73ef69c0ddc5b3cb4c4
+license    : GPL-2.0
+component  : desktop.mate
+summary    : Tweak tool for the MATE Desktop
+description: |
+    Tweak tool for the MATE Desktop
+builddeps  :
+    - pkgconfig(python-3.5)
+    - python-distutils-extra
+rundeps    :
+    - python3-gobject
+    - python-psutil
+    - python-setproctitle
+build      : |
+    %python3_setup
+install    : |
+    %python3_install
