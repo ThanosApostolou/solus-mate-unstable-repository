@@ -36,4 +36,5 @@ mate-indicator-applet
 #mozo
 brisk-menu
 caja-dropbox
+mate-tweak
 #mate-notification-theme-slate
