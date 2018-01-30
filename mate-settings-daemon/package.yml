@@ -1,8 +1,8 @@
 name       : mate-settings-daemon
-version    : 1.19.1
-release    : 10015
+version    : 1.19.2
+release    : 10016
 source     :
-    - https://pub.mate-desktop.org/releases/1.19/mate-settings-daemon-1.19.1.tar.xz : 33180e64a9d247db563b297291957b0931ebce13f2c5bb736b0789e5bd8b0059
+    - https://pub.mate-desktop.org/releases/1.19/mate-settings-daemon-1.19.2.tar.xz : 5db480e73f7589575991ffa5d44accd4a7ea60d3cec544041271febf6a128ec1
 license    :
     - GPL-2.0
     - LGPL-2.1

@@ -1,0 +1,24 @@
+name       : mate-indicator-applet
+version    : 1.19.0
+release    : 1005
+source     :
+    - https://pub.mate-desktop.org/releases/1.19/mate-indicator-applet-1.19.0.tar.xz : 2eea00acbb6e1170997c8be3113839228cefcde9fe647026230dbee5d5b445d3
+license    :
+    - GPL-3.0
+    - LGPL-2.1
+component  : desktop.mate
+summary    : MATE Panel Indicator Applet
+description: |
+    MATE Panel Indicator Applet
+builddeps  :
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libmatepanelapplet-4.0)
+    - pkgconfig(indicator3-0.4)
+    - pkgconfig(x11)
+    - itstool
+setup      : |
+    %configure --with-gtk=3.0
+build      : |
+    %make
+install    : |
+    %make_install

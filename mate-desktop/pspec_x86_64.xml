@@ -65,7 +65,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="10010">mate-desktop</Dependency>
+            <Dependency release="10011">mate-desktop</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -84,9 +84,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="10010">
-            <Date>2017-12-26</Date>
-            <Version>1.19.2</Version>
+        <Update release="10011">
+            <Date>2018-01-30</Date>
+            <Version>1.19.3</Version>
             <Comment>Packaging update</Comment>
             <Name>Thanos Apostolou</Name>
             <Email>thanosapostolou@outlook.com</Email>

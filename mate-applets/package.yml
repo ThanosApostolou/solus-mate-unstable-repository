@@ -1,8 +1,8 @@
 name       : mate-applets
-version    : 1.19.2
-release    : 10012
+version    : 1.19.4
+release    : 10013
 source     :
-    - https://pub.mate-desktop.org/releases/1.19/mate-applets-1.19.2.tar.xz : 203e8f64dead33028784604657458b43032ccbde496dee6726276d93fd96b9e4
+    - https://pub.mate-desktop.org/releases/1.19/mate-applets-1.19.4.tar.xz : 8d2cf00701ae4bd45877c5b937612604194230c17e0b69dc5823eddd763cfd37
 license    :
     - GPL-2.0
     - GFDL-1.1

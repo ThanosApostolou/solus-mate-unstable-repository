@@ -1,8 +1,8 @@
 name       : mate-system-monitor
-version    : 1.19.0
-release    : 1007
+version    : 1.19.1
+release    : 1008
 source     :
-    - https://pub.mate-desktop.org/releases/1.19/mate-system-monitor-1.19.0.tar.xz : 8357b13cdb7ac8050701c5374869c0269b72e1ad89339ebd43ae86ad54c4bb75
+    - https://pub.mate-desktop.org/releases/1.19/mate-system-monitor-1.19.1.tar.xz : c64237d0960a3e30897cb17c57a1417b5966eb82247e6e3348bc714703f8d21f
 license    : GPL-2.0
 component  : desktop.mate
 summary    : MATE System Monitor

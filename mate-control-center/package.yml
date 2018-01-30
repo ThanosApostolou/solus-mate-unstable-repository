@@ -1,8 +1,8 @@
 name       : mate-control-center
-version    : 1.19.2
-release    : 10015
+version    : 1.19.3
+release    : 10016
 source     :
-    - https://pub.mate-desktop.org/releases/1.19/mate-control-center-1.19.2.tar.xz : fa60d3623e9db615968230a607757eac2eb8dfd7e5d3295ebbc0c0c7bc799bf9
+    - https://pub.mate-desktop.org/releases/1.19/mate-control-center-1.19.3.tar.xz : d5b4c9682cfeb35ed661629076b2f972c25f2b7230f1ac825cecc7d8daf949e2
 license    : GPL-2.0
 summary    : MATE Control Center
 component  : desktop.mate

@@ -9,7 +9,7 @@ is_installed() {
 	else
 		return 1
 	fi
-} 
+}
 
 # all available packages in my repo:
 PackagesArray=(atril \
@@ -45,6 +45,7 @@ PackagesArray=(atril \
 			   mate-desktop-docs \
 			   mate-icon-theme \
 			   mate-icon-theme-faenza \
+			   mate-indicator-applet \
 			   mate-media \
 			   mate-menus \
 			   mate-menus-devel \

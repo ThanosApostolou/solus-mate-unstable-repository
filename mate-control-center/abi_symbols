@@ -57,8 +57,6 @@ libmate-slab.so.0:nld_search_context_picker_get_context
 libmate-slab.so.0:nld_search_context_picker_get_type
 libmate-slab.so.0:nld_search_context_picker_new
 libmate-slab.so.0:nld_search_context_picker_set_context
-libmate-slab.so.0:nld_search_entry_get_type
-libmate-slab.so.0:nld_search_entry_new
 libmate-slab.so.0:open_desktop_item_exec
 libmate-slab.so.0:open_desktop_item_help
 libmate-slab.so.0:regenerate_categories

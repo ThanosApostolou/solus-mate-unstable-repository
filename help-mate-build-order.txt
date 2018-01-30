@@ -31,6 +31,7 @@ mate-power-manager
 caja-extensions
 mate-applets
 mate-sensors-applet
+mate-indicator-applet
 #mate-netbook
 #mozo
 brisk-menu
