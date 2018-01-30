@@ -1,8 +1,8 @@
 name       : atril
-version    : 1.19.5
-release    : 10010
+version    : 1.19.6
+release    : 10011
 source     :
-    - https://pub.mate-desktop.org/releases/1.19/atril-1.19.5.tar.xz : 3d1e17037bfd7f9c028a7adb8bae5eac9e1a130577d2c51edfbecd5ec859a530
+    - https://pub.mate-desktop.org/releases/1.19/atril-1.19.6.tar.xz : b0669671388f58b68886607c1b7f5425bcce3d93d0fb2db948e1247de8a366d4
 license    : GPL-2.0
 component  : desktop.mate
 summary    : MATE Desktop Document Viewer

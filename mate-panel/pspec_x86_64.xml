@@ -252,7 +252,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="10012">mate-panel</Dependency>
+            <Dependency release="10013">mate-panel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -271,9 +271,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="10012">
-            <Date>2017-12-26</Date>
-            <Version>1.19.4</Version>
+        <Update release="10013">
+            <Date>2018-01-30</Date>
+            <Version>1.19.6</Version>
             <Comment>Packaging update</Comment>
             <Name>Thanos Apostolou</Name>
             <Email>thanosapostolou@outlook.com</Email>

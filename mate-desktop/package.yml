@@ -1,8 +1,8 @@
 name       : mate-desktop
-version    : 1.19.2
-release    : 10010
+version    : 1.19.3
+release    : 10011
 source     :
-    - https://pub.mate-desktop.org/releases/1.19/mate-desktop-1.19.2.tar.xz : 48af5795ce6c98fb6c8d8aa83d53a0f6dda5619c2523122118719d1da42ce76c
+    - https://pub.mate-desktop.org/releases/1.19/mate-desktop-1.19.3.tar.xz : 483514f3cccfe83ed18372fb5807ed03a4f132a5067058c87d3bedaa25a9c356
 license    :
     - GPL-2.0
     - LGPL-2.0

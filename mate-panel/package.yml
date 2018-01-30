@@ -1,8 +1,8 @@
 name       : mate-panel
-version    : 1.19.4
-release    : 10012
+version    : 1.19.6
+release    : 10013
 source     :
-    - https://pub.mate-desktop.org/releases/1.19/mate-panel-1.19.4.tar.xz : f72e9e7caf9396c059dd735d4390fb98161d4395810529b0c6cf7e5fb500b86a
+    - https://pub.mate-desktop.org/releases/1.19/mate-panel-1.19.6.tar.xz : fd0c729385d927c3d6dc49642e679dee7d20a5270ea50fdd2167a49344f4d32d
 license    :
     - GPL-2.0
     - LGPL-2.0
